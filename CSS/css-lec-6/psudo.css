@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+/* Css Pseudo Class */
+/*
+
+    :first-child
+    :first-of-type
+    :last-child
+    :last-of-type
+    :nth-child()
+    :nth-last-child()
+    :nth-last-of-type()
+    :nth-of-type()
+    :only-of-type
+    :only-child
+    :odd(3n)
+    :even(2n)
+    :not()
+    :where
+    :empty
+
+*/
+
+/* div:empty{
+    background-color: blue;
+    color:white;
+    height: 100px;
+} */
+
+
+/* Attributes Selector */
+
+/*
+    [attr]
+    [attr=value]
+    [attr~=value]
+    [attr|=value]
+    [attr^=value]
+    [attr$=value]
+    [attr*=value]
+
+*/
+
+
+/* a[href="www.google.com"]{
+    background-color: green;
+    color:white;
+} */
+
+
+/* input:nth-of-type(1) ,   input[type="email"]{
+    background-color: red;
+} */
+
+/* abbr[title]{
+    background-color: purple;
+} */
+
+
+/* [class*="b"]{
+    height: 100px;
+    width: 100px;
+    background-color: paleturquoise;
+    border:2px solid black;
+    font-size: 40px;
+    display: inline-block;
+} */
+
+/* Css Pseudo element */
+
+
+/* p::selection{
+    background-color: yellow;
+    color:red;
+    text-decoration: underline;
+} */
+
+/* p::first-letter{
+    background-color: yellow;
+    color:red;
+    text-decoration: underline;
+} */
+
+/* p::first-line{
+    background-color: yellow;
+    color:red;
+    text-decoration: underline;
+} */
+
+
+/* Css after and before */
+
+/* h1::before{
+    content: "1";
+}
+
+h1::after{
+    content: "2";
+} */
+
+
+/* span{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+
+
+span::after{
+    content: url(../image/lines-hd-png-removebg-preview.png);
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+} */
