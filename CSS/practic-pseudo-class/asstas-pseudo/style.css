@@ -26,4 +26,13 @@ a[target="_self"]{
 a::nth-child(1){
     color:red;
     background-color:yellow;
+    h1:nth-child(6){
+        background-color: yellow;
+        color:red;
+       }
+
+       div:nth-of-type(2) h1:nth-child(2){
+        background-color: yellow;
+        color:red;
+       }
 }

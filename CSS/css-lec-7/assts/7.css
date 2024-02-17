@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/* css Offline font */
+
+/* p{
+    font-family: 'Protest Revolution';
+} */
+
+/* css display properties */
+
+
+/* css flex-properties */
+
+/* h1:nth-child(1){
+    display: inline;
+} */
+
+/* .maindiv{
+    max-width: 1200px;
+    height:80vh;
+    display: flex;
+    display: none;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border:1px solid black;
+    grid-template-columns:200px 400px 600px;
+    visibility: hidden;
+}
+
+.child-1{
+    height: 200px;
+    width: 200px;
+    height: inherit;
+    border:1px solid red;
+}
+.child-2{
+    height: 200px;
+    width: 200px;
+    height: inherit;
+    border:1px solid red;
+}
+.child-3{
+    height: 200px;
+    width: 200px;
+    height: inherit;
+    border:1px solid red;
+} */
+
+/*  Flex - Grow */
+
+.maindiv{
+    border:2px solid black;
+    width: 800px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.maindiv div{
+    height: inherit;
+    font-size: 20px;
+    color:white;
+    padding: 10px;
+    flex-basis: 200px;
+}
+
+.maindiv div:nth-child(1){
+    background-color: orange;
+    /* flex-grow: 1; */
+    /* flex-basis: 33.33%; */
+    flex-shrink: 2;
+}
+.maindiv div:nth-child(2){
+    background-color: green;
+    /* flex-grow: 1; */
+    /* flex-basis: 33.33%; */
+    flex-shrink: 10;
+}
+.maindiv div:nth-child(3){
+    background-color: blue;
+    /* flex-grow: 1; */
+    /* flex-basis:33.33%; */
+    flex-shrink: 2;
+}
+
+/* flex:grow shrink basis; */
+
+/* flex:1 1 0% */
