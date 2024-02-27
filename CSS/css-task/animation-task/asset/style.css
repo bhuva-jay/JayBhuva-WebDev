@@ -1,0 +1,44 @@
+.task{
+    height: 60px;
+    width: 60px;
+    background-color: black;
+    animation: move 10s 0.5ms infinite linear;
+}
+@keyframes move{
+    0%{
+       transform:translate(0px);
+    }
+    9%{
+        transform:translate(200px,0px);
+    }
+    18%{
+        transform:translate(200px,200px);
+    }
+    27%{
+        transform:translate(400px,200px);
+    }  
+    36%{
+        transform:translate(400px,400px);
+    }
+    45%{
+            transform:translate(200px,400px);
+    }
+    54%{
+            transform:translate(0px,400px);
+    }
+    63%{
+        transform:translate(0px,250px);
+    }
+    72%{
+        transform:translate(150px,250px);
+    }
+    81%{
+        transform:translate(150px,100px);
+    }
+    90%{
+        transform:translate(52px,100px);
+}
+95%{
+    transform:translate(52px,60px);
+}
+}

@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+
+/* Examples */
+
+
+/* .fixed{
+    width: 100%;
+    height: 100px;
+    background-color: green;
+    border:5px solid black;
+    position: fixed;
+}
+span{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    background-color: red;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid white;
+    bottom:0;
+    right:0;
+    margin: 20px;
+}
+span i{
+    color:white
+} */
+
+
+/* Position - static */
+
+/* .static{
+    width: 100%;
+    height: 100px;
+    background-color: green;
+    border:5px solid black;
+    position: static;
+} */
+
+/* .sticky{
+    width: 100%;
+    height: 100px;
+    background-color: green;
+    border:5px solid black;
+    position:sticky;
+    bottom: 100px;
+} */
+
+
+/* Position Relative / absolute */
+
+/* .absolute{
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    margin: auto;
+}
+
+.maindiv{
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+    border:2px solid black;
+} */
+
+
+/* Z-index In Css */
+
+/* .z-index-1{
+    height: 100px;
+    width: 100%;
+    background-color: green;
+    z-index: 100;
+    position: fixed;
+}
+.box-1{
+    height: 100px;
+    width: 100%;
+    background-color: blue;
+    position: absolute;
+    z-index: 1;
+} */
+/* .z-index-2{
+    height: 200px;
+    width: 500px;
+    background-color: purple;
+    z-index: 2;
+    position: absolute;
+}
+.z-index-3{
+    height: 300px;
+    width: 400px;
+    background-color: yellow;
+    z-index: 1;
+    position: absolute;
+} */
+
+/* Css Float Prop. */
+
+
+/* p img:nth-child(1){
+    float: right;
+}
+p img:nth-child(2){
+    float: left;
+} */
+
+
+
+/* Css Clear Prop */
+
+/* img:nth-child(1){
+    float: left;
+}
+img:nth-child(3){
+    float: right;
+}
+p{
+    clear: both;
+} */
+
+/* .wrapper {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  .left {
+    border: 1px solid black;
+    clear: both;
+  }
+  .black {
+    float: left;
+    margin: 0;
+    background-color: black;
+    color: #fff;
+    width: 20%;
+  }
+  .red {
+    float: right;
+    margin: 0;
+    background-color: pink;
+    width: 20%;
+  }
+  p {
+    width: 50%;
+  } */
+
+  /* Css Cursor Prop */
+
+  /* p{
+    cursor:zoom-out;
+  }
+
+  a{
+    cursor: progress;
+  }
+   */
+
+
+   /* Object-Fit Prop */
+
+   /* .maindiv{
+        height: 400px;
+        width: 400px;
+        border:2px solid red;
+        overflow: hidden;
+        position: relative;
+   } */
+   /* .maindiv img{
+    height:100%;
+    width: 100%;
+    object-fit: fill;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+   }
+
+   .maindiv p{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    width: 400px;
+    height: fit-content;
+    color:white
+   } */
