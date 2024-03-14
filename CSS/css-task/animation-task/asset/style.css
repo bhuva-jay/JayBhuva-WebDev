@@ -20,7 +20,7 @@
     36%{
         transform:translate(400px,400px);
     }
-    /*45%{
+    45%{
             transform:translate(200px,400px);
     }
     54%{
@@ -40,5 +40,5 @@
 }
 95%{
     transform:translate(52px,60px);
-} */
+} 
 }
