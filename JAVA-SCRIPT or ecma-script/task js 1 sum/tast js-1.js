@@ -74,6 +74,40 @@ let votaingcard =true;
      }
 }
 
-{
-    
+{    
+   let a = 20;
+let b = 15;
+console.log("a + b = ", a + b);
+console.log("a - b = ", a - b);
+console.log("a * b = ", a * b);
+console.log("a / b = ", a / b);
+console.log("a % b = ", a % b);
+console.log("a ** b = ", a ** b);
+console.log("a++ = ", a++);
+console.log("a-- = ", a--);
 }
+
+{
+let x = 5;
+console.log("x+=5 is" ,x += 5);
+console.log("x-=5 is" ,x -= 5);
+console.log("x*=5 is" ,x *= 5);
+console.log("x/=5 is" ,x /= 5);
+console.log("x%=5 is" ,x %= 5);
+console.log("x**=5 is" ,x **= 5);
+}
+
+{
+let y = 60;  
+let z = 50;
+console.log("y==z is" ,y==z);
+console.log("y!=z is" ,y!=z);
+console.log("y===z is" ,y===z);
+console.log("y!==z is" ,y!==z);
+console.log("y>z is" ,y>z);
+console.log("y<z is" ,y<z);
+console.log("y>=z is" ,y>=z);
+console.log("y<=z is" ,y<=z);
+}
+
+
