@@ -130,7 +130,4 @@ console.log("y<=z is" ,y<=z);
         
      
 }
-// task 9
-{
 
-}
