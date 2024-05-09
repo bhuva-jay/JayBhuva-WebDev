@@ -1,0 +1,23 @@
+@media (max-width:320) {
+    .maindiv-1{
+        max-width: 320px;
+        display: flex;
+        background-color: aqua;
+    }
+    a{
+        display: none;
+    }
+     .bg-text{
+        order: 2;
+        text-align: center;
+        max-width: 350px;
+     }
+     .bg-image{
+        order: 1;
+     }
+     .bg-image{
+        max-width: 100%;
+        height: auto;
+     }
+
+}
