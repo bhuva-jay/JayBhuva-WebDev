@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word_counter</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    .word-counter-container{
+        padding: 16px;
+        font-family: "Roboto",sans-serif;
+        text-align: center;
+    }
+    .word-counter-container h2{
+        font-size: 42px;
+    }
+    
+    .word-counter-container textarea{
+        display: block;
+        width: 100%;
+        height: 200px;
+        border:  2px solid #14213d;
+        border-radius: 8px;
+        padding: 24px;
+        box-sizing: border-box;
+        font-family: "Roboto" ,sans-serif;
+        font-size: 16px;
+        resize: none;
+        max-width: 800px;
+        line-height: 2;
+        margin: 0 auto;
+    
+    }
+    .word-counter-container .count-btn{
+        padding: 16px 48px;
+        margin: 32px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        background: #14213d;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        transition: all 500ms ease;
+    }
+    .word-counter-container .count-btn:hover{
+        background: #001219;
+    
+    }
+    .word-counter-container .word-count {
+        font-size: 32px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       gap:16;
+    
+    }
+    .word-counter-container .word-count span{
+        font-size: 56px;
+        font-weight:bold;
+        
+    }
+</style>
+<body>
+    <div class="word-counter-container">
+        <h2>wordcounter</h2>
+        <textarea name="" id="" class="words" cols="30" rows="10"></textarea>
+        <button class="count-btn">word counter</button>
+        <div class="word-count">no. of words
+            <span>0</span>
+        </div>
+    </div>
+
+    <script>
+        const wordsTextarea = document.querySelector(".word-counter-container textarea");
+        const countBtn = document.querySelector(".word-counter-container .count-btn");
+        const wordCount = document.querySelector(".word-counter-container .word-count span");
+
+        const countWords = () => {
+            let words = wordsTextarea.value;
+            let WordsTrimmed = words.replace(/\s+/g," ").trim();
+
+            let splitWords = WordsTrimmed.split(" ");
+
+            console.log(splitWords);
+
+            let numberOfWords = splitWords.length;
+            if (splitWords[0] == "") {
+                numberOfWords = 0;
+            }
+
+            wordCount.innerHTML= numberOfWords;
+        };
+
+        countBtn.addEventListener("click", countWords);
+    </script>
+</body>
+
+</html>
