@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random String Generator</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color:palegreen  ;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <h1>Random String Generator</h1>
+    <div class="container">
+        <label for="length">Length:</label>
+        <input type="number" id="length" min="1" max="20" value="10" style="background-color: crimson; color: aliceblue;">
+        <button id="generate" style="background-color: crimson; color: aliceblue;">Generate</button>
+        <div id="result"></div>
+    </div>
+    <script>
+        const generateBtn = document.getElementById('generate');
+const resultDiv = document.getElementById('result');
+const lengthInput = document.getElementById('length');
+
+const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+
+function generateRandomString(length) {
+    let result = '';
+    for (let i = 0; i < length; i++) {
+        result += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    return result;
+}
+
+generateBtn.addEventListener('click', () => {
+    const length = lengthInput.value;
+    const randomString = generateRandomString(length);
+    resultDiv.textContent = randomString;
+});
+    </script>
+</body>
+</html>
