@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <!-- <script src="https://bootstrapcreative.com/wp-bc/wp-content/themes/wp-bootstrap/codepen/bootstrapcreative.js?v=8"></script> -->
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container" style=" background-color: #ecfab6;">
+    <div class="h1 text-center text-danger">bootstrap 5 registraton form validation</div>
+    <form action="" class="mt-5 needs-validation was-validated" novalidate>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-floating">
+            <input class="form-control" type="text" name="" id="Input" placeholder="user name" required>
+            <label for="Input ps-4">User Name:</label>
+            <div class="valid-feedback"> Looks good</div>
+            <div class="invalid-feedback"> Please choose a email-id.</div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-floating">
+            <input class="form-control" type="email" name="" id="InputText" placeholder="enter email-id" required>
+            <label class="input-label" for="InputText">Email Id:</label>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+            <div class="invalid-feedback"> Please choose a email-id.</div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-floating">
+            <input class="form-control" type="number" name="" id="InputText" placeholder="mobailnumber" required>
+            <label class="input-label" for="InputText">Mobile number</label>
+            <div class="valid-feedback">  Looks good!</div>
+            <div class="invalid-feedback"> Please choose a mobail number</div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="massge" id="floatingTextarea" required></textarea>
+            <label for="floatingTextarea">message:</label>
+            <div class="valid-feedback">  Looks good!</div>
+            <div class="invalid-feedback"> Please type a message</div>
+          </div>
+        </div>
+        <div class="col-12 my-3">
+          <input class="form-check-input" type="checkbox" required>
+          <label class="input-label" for="">I agree on form validation</label>
+          <div class="valid-feedback">  Looks good!</div>
+          <div class="invalid-feedback"> Please acsest terms and condition</div>
+        </div>
+        <div >
+          <button class="btn btn-info" type="submit">Submit</button>
+        </div>
+    </form>
+
+  </div>
+
+  <button type="button" class="btn btn-primary position-relative">
+    telegram
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+      99+
+      <span class="visually-hidden"></span>
+    </span>
+  </button>
+
+
+ 
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

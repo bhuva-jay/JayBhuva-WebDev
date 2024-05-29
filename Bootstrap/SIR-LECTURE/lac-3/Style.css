@@ -1,0 +1,29 @@
+.col{
+    background-color: gray;
+    border:2px solid black;
+}
+.col-2{
+    background-color: gray;
+    border:2px solid black;
+}
+.col-6{
+    background-color: gray;
+    border:2px solid black;
+}
+.col-5{
+    background-color: gray;
+    border:2px solid black;
+}
+.col-4{
+    background-color: gray;
+    border:2px solid black;
+}
+.col-12{
+    background-color: gray;
+    border:2px solid black;
+}
+
+.row{
+    height: 600px;
+    border:1px solid black;
+}
