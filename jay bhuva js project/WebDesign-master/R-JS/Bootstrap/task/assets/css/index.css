@@ -1,0 +1,152 @@
+/* .row div{
+    border: 5px solid white;
+ 
+    display: flex;
+}
+.col-1{
+    background-color: rgb(112, 78, 235);
+}
+.col-3{
+    background-color: rgb(5, 129, 5);
+}
+.col-4{
+    background-color: rgb(57, 19, 196);
+}
+.col-8{
+    background-color: rgb(64, 16, 240); 
+}
+ .col-2{
+    background-color: aqua;
+ }
+ .col-6{
+    background-color: rgb(224, 54, 82);
+ }
+.col-12{
+    background-color: red;
+} */
+
+/* task-3 */
+/* .row div{
+    border: 2px solid rgb(146, 121, 240); 
+    display: flex;
+    background-color: rgb(173, 173, 235);
+    text-align: center;
+    margin-top: 15px;
+    height: 45px;
+}
+.col-1{
+    height: 50px;
+} */
+
+/* task-4 */
+/* .row-1 div{
+     border: 2px solid green;
+    border-radius: 5px;
+    margin-top: 20px; 
+    padding: 5px 25px 5px 5px; 
+    margin-left: 15px; 
+    width: 80px;
+}
+.row-2 div{
+    border: 2px solid green;
+    border-radius: 5px;
+    margin-top: 20px; 
+    padding: 5px 25px 5px 5px; 
+    margin-left: 15px; 
+    width: 365px;
+}
+.row-3 div.col-4{
+    border: 2px solid green;
+    border-radius: 5px;
+    margin-top: 20px; 
+    padding: 5px 25px 5px 5px; 
+    margin-left: 15px; 
+    width: 365px;
+}
+.row-3 div.col-8{
+    border: 2px solid green;
+    border-radius: 5px;
+    margin-top: 20px; 
+    padding: 5px 25px 5px 5px; 
+    margin-left: 15px; 
+    width: 745px;
+}
+.row-4 div{
+    border: 2px solid green;
+    border-radius: 5px;
+    margin-top: 20px; 
+    padding: 5px 25px 5px 5px; 
+    margin-left: 15px; 
+    width: 555px;
+}
+.row-5 div{
+    border: 2px solid green;
+    border-radius: 5px;
+    margin-top: 20px; 
+    padding: 5px 25px 5px 5px; 
+    margin-left: 15px; 
+    width: 1125px;
+}
+.row-6 div{
+    border: 2px solid green;
+    border-radius: 5px;
+    margin-top: 20px; 
+    padding: 5px 25px 5px 5px; 
+    margin-left: 15px; 
+    width: 365px;
+} */
+/* .row-7 div{
+    border: 2px solid green;
+    border-radius: 5px;
+    margin-top: 20px; 
+    padding: 5px 25px 5px 5px; 
+    margin-left: 15px; 
+    width: 270px;
+} */
+/* .row-8 div{
+    border: 2px solid green;
+    border-radius: 5px;
+    margin-top: 20px; 
+    padding: 5px 25px 5px 5px; 
+    margin-left: 15px; 
+    width: 365px;
+}
+.none{
+ border: 2px solid white !important;
+    border-radius: 5px;
+    margin-top: 20px; 
+    padding: 5px;   
+} */
+
+/* task-5 */
+ 
+ 
+/* .row div{
+    background-color: rgb(60, 60, 214);
+    border: 5px solid white;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+} */
+
+/* task-6 */
+.col-md-4{
+    background-color: blue;
+    padding: 10px;
+    border: 2px solid white;
+    height: 50px;
+}
+.col-lg-6{
+    background-color: gray;
+    padding: 10PX;
+    border: 2px solid white;
+    height: 50px;
+}
+.col-xl-4{
+    background-color: aqua;
+    padding: 10px ;
+    border: 2px solid white;
+    height: 50px;
+}
+/* task-7 */
+

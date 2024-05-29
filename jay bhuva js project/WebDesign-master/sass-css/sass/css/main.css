@@ -1,0 +1,16 @@
+body {
+  height: 90vh;
+  width: 100vh;
+  background-image: url(/backgroungimg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+  height: 110px;
+  width: px;
+}/*# sourceMappingURL=main.css.map */

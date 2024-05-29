@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form-04</title>
+</head>
+
+<body>
+    <form style="width: 250px; border: none;">
+        <fieldset>
+        <h1>Sign up</h1>
+        <label>Name:</label>  <br>
+        <input type = "text" placeholder="full name"  required>
+        <br>
+        <br>
+        <label>email:</label> <br>
+        <input type = "email" placeholder="gmail id:" required>
+        <br>
+        <br>
+        <label>Password:</label><br>
+        <input type = "password" placeholder="8 characters" required>
+        <br>
+        <br>
+        <label>Confirm Password:</label><br>
+        <input type = "password" placeholder="8 characters" required>
+        <br>
+        <br>
+        <label>Date Of Birth:</label><br>
+        <input  placeholder="dd/mm/yyyy" required>
+        <br>
+        <br>
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" required>
+        <label for="">Male</label>
+        <input type="radio" name="gender">
+        <label for="">Female</label>
+        <input type="radio" name="gender">
+        <label for="">Other</label>
+        <br>
+        <br>
+        <label>Insert your photo:</label><br>
+        <input type="file">
+        <br>
+        <br>
+        <label>Insert your resume:</label><br>
+        <input type="file">
+        <br>
+        <br>
+        <label>Security Question:</label><br>
+        <select name = "security-question">
+            <option selected rows="5" cols="2">Select</option>
+        <option>what    favrout    vegetable?</option>
+        <option>what is ur pet name?</option>
+        
+        </select>
+        <br>
+        <textarea  rows = "5" cols = "30"></textarea>
+        <br>
+        <br>
+        <input type = "checkbox" required>I agree terms and conditions
+        <br>
+        <input type="Submit" value="Register">
+    </fieldset>
+        </form>
+</body>
+</html>

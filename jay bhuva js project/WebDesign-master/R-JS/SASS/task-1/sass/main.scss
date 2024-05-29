@@ -1,0 +1,85 @@
+@import "variables";
+
+
+.container{
+margin: 100px 100px;
+
+}
+.heading{
+  text-align: center;
+  margin: 40px 40px;
+}
+.heading h1{
+   color: rgb(95, 93, 93);
+   font-size: $fh1;
+}
+.heading p{
+  color: rgb(126, 120, 120);
+   font-size: $fh1;
+}
+.icon{
+  margin-top: 60px;
+  font-size: 40px;
+  color: rgb(143, 143, 202);
+}
+
+.box{
+  text-align: center;
+  height: 350px;
+  width: 350px;
+  border: 1px solid rgb(194, 194, 211);
+  box-shadow: 2px 2px 4px gray;
+}
+.loan p{
+  color:  rgb(95, 93, 93);
+   font-size: 30px;
+}
+.loan-p{
+  margin: 20px 20px;
+  font-size: 25px;
+  color: rgb(149, 149, 202);
+}
+.get a{
+  color: rgb(117, 117, 206);
+}
+.main-box{
+  display: flex;
+  justify-content: space-around;
+}
+.para-text{
+  text-align: center;
+}
+.para-text h1{
+  color: rgb(88, 87, 87);
+   font-size: $fh1;
+}
+.para-text p{
+  font-size: 20px;
+  color: rgb(149, 149, 202);
+}
+.main-three{
+  border: 1px solid black;
+  display:flex ;
+}
+.para-1{
+  margin: 20px 20px;
+  border: 1px solid black;
+  height: 600px;
+  width: auto;
+}
+.para-img img{
+  height: 300px;
+  width: auto;
+}
+.august{
+  display: flex;
+  color:gray;
+  font-weight:bold;
+    
+}
+.admin{
+  font-size: 14px;
+  color:rgb(126, 126, 231)
+}
+
+

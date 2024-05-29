@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <!-- <div class="row">
+    <div class="col-3 d-flex">
+        <label class="form-label" for="">state</label>
+        <select name="" id="" class="from-select">
+            <option value="">Choose...</option>
+            <option value="">Gujarat</option>
+            <option value="">maharashtra</option>
+        </select>
+    </div>
+    <div class="col-3 d-flex">
+        <label for="">city</label> 
+        <p>
+            <button class="btn btn-primary btn-lg" type="button"  data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              surat
+            </button>
+          </p>
+          <div style="min-height: 120px;">
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+              <div class="card card-body" style="width: 300px;">
+                This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+              </div>
+            </div>
+          </div> 
+    </div>
+    <div class="col-3 dropdown d-flex">
+       <button class="btn btn-primary rounded-pill dropdown-toggle" type="button" data-bs-toggle="dropdown" >city</button>
+       <ul class="dropdown-menu">
+        <li><button class="dropdown-item" type="button">Surat</button></li>
+        <li><button class="dropdown-item" type="button">Ahmedabad</button></li>
+        <li><button class="dropdown-item" type="button">vadodara</button></li>
+       </ul>
+    </div>
+    <div class="col-3 dropdown">
+        <button class="introduction btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">Introduction</button>
+        <ul class="three-item dropdown-menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Photo</a></li>
+        </ul>
+    </div>
+</div> -->
+  <!-- second -->
+  <div class="dropdown">
+    <button class="btn btn-primary btn-lg dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown">
+      products
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">product-1</a></li>
+      <li><a class="dropdown-item" href="#">product-2</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">product-3</a></li>
+    </ul>
+  </div>
+  <!-- Example split danger button -->
+  <div class="btn-group mt-5">
+    <button type="button" class="btn btn-dark ">Action</button>
+    <button type="button" class="btn btn-secondary dropdown-toggle btn-sm dropdown-toggle-split"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      <!-- <span class="visually-hidden">Toggle Dropdown</span> -->
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+
+  <div class="dropdown mt-5">
+    <a class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" href="">Catagories</a>
+
+    <ul class="dropdown-menu dropdown-menu-dark">
+      <li><a class="dropdown-item active" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-warning">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+        aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNavDarkDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown btn-group">
+            <button class="btn btn-dark ">
+              Dropdown
+            </button>
+            <button type="button" class="btn btn-secondary dropdown-toggle btn-sm dropdown-toggle-split"
+              data-bs-toggle="dropdown" aria-expanded="false"></button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Default dropup button -->
+  <!-- <div class="btn-group dropup">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Dropup
+    </button>
+    <ul class="dropdown-menu"> -->
+  <!-- Dropdown menu links -->
+  <!-- <li><a class="dropdown-item active" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div> -->
+
+  <!-- Split dropup button -->
+  <div class="btn-group dropend">
+    <button type="button" class="btn btn-secondary">
+      Split dropup
+    </button>
+    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+      aria-expanded="false">
+      <!-- <span class="visually-hidden">Toggle Dropdown</span> -->
+    </button>
+    <ul class="dropdown-menu">
+      <!-- Dropdown menu links -->
+      <li><a class="dropdown-item active" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+
+
+  <div class="">
+    <button type="button" class="btn btn-success dropdown-toggle rounded-0" data-bs-toggle="dropdown"
+      aria-expanded="false">
+      Right-aligned menu example
+    </button>
+    <ul class="dropdown-menu dropdown-menu-sm-start">
+      <li><button class="dropdown-item" type="button">Action</button></li>
+      <li><button class="dropdown-item" type="button">Another action</button></li>
+      <li><button class="dropdown-item" type="button">Something else here</button></li>
+    </ul>
+  </div>
+
+  <div>
+    <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">Headers</button>
+    <ul class="dropdown-menu">
+      <li>
+        <h6 class="dropdown-header text-black">Dropdown header</h6>
+      </li>
+      <li><a class="dropdown-item " href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+    </ul>
+  </div>
+
+  <div>
+    <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">
+      Text Button
+    </button>
+    <div class="dropdown-menu p-1 text-body-secondary" style="max-width: 200px;">
+      <p class="fw-bold">
+        Some example text that's free-flowing within the dropdown menu.
+      </p>
+      <p class="mb-0">
+        And this is more example text.
+      </p>
+    </div>
+  </div>
+
+  <div>
+    <a class="dropdown-toggle" data-bs-toggle="dropdown"" href="">Fill This Form...</a>
+    <div class=" container rounded-3 dropdown-menu bg-white">
+      <form class="row g-3 needs-validation" novalidate="">
+        <div class="row justify-content-between">
+          <div class="part-1 col col-6">
+            <div class="col m-2">
+              <div class=" row brain">
+                <div class="col-6 mt-5">
+                  <img src="assets/LOGO.svg" alt="">
+                </div>
+                <div class="mt-4">
+                  <h2 class="text-white">We make digital <br>product that drive you <br> to stand out</h2>
+                </div>
+                <div class="mt-4">
+                  <p class="text-white">We write words,take photos, make vedios and interect with
+                    artificial intelligence</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col col-5">
+            <span>
+              <header>Registration</header>
+              <p>Enter your details to register</p>
+            </span>
+            <div class="form-group">
+              <label for="validationserver01" class="form-labal mb-2">First Name</label>
+              <input type="text" class="form-control" id="validationserver01" placeholder="first name" required>
+              <div id="validationserver01feedback" class="inavalid-feedback">
+                please type first name...
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="validationserver02" class="mb-2">Last Name</label>
+              <input type="text" class="form-control" id="validationserver02" aria-describedby="emailHelp"
+                placeholder="last name" required>
+              <div id="validationserver02feedback" class="inavalid-feedback">
+                please type last name...
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="validationserver03" class="mb-2">Email</label>
+              <input type="email" class="form-control" id="validationserver03" aria-describedby="emailHelp"
+                placeholder="your email" required>
+              <div id="validationserver03feedback" class="inavalid-feedback">
+                please type email...
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="validationserver04" class="mb-2">Password</label>
+              <input type="password" class="form-control" id="validationserver04" aria-describedby="password"
+                placeholder="password">
+              <div id="validationserver04feedback" class="inavalid-feedback" required>
+                please enter password...
+              </div>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+              <label class="form-check-label" for="flexCheckDefault">
+                I agree to the terms and condition
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3 w-100">Sign Up</button>
+            <div class="row">
+              <p>Alredy have n account? <button type="button" class="btn" data-bs-toggle="button"><a
+                    style="text-decoration:none ;" href="">Sign in
+            </div>
+            <div class="with">
+              <p class="text-black">Or sign in with</p>
+            </div>
+            <div class="btn-out">
+              <button type="button" class="btn btn-outline-primary"><i class="fa-brands fa-google"></i>
+                Google</button>
+              <button type="button" class="btn btn-outline-primary"><i class="fa-brands fa-twitter"></i>
+                Teitter</button>
+              <button type="button" class="btn btn-outline-primary"><i class="fa-brands fa-facebook-f"></i>
+                Facebook</button>
+            </div>
+          </div>
+        </div>
+
+      </form>
+  </div>
+
+  </div>
+
+
+  <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+      data-bs-auto-close="outside">
+      Dropdown form
+    </button>
+    <form class="dropdown-menu p-4">
+      <div class="mb-3">
+        <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleDropdownFormPassword2" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+      </div>
+      <div class="mb-3">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+          <label class="form-check-label" for="dropdownCheck2">
+            Remember me
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+  </div>
+
+  <nav class="main-menu-content">
+    <ul class="dropdown-menu">
+      <li class="has-dropdown has-mega-menu">
+        <a href="">Home</a>
+        <div class="home-menu ">
+          <div class="row row-cols-1 row-cols-lg-4 row-cols-xl-5">
+            <div class="col">
+              <div class="home-menu-item">
+                <a class="dropdown-item" href="">
+                  <div class="home-menu-thumb position-relative fix">
+                    <img src="assets/beauty.jpeg" alt="">
+                  </div>
+                  <div class="home-menu-content">
+                    <h5 class="home-menu-title">Electronic</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="home-menu-item">
+                <a class="dropdown-item" href="">
+                  <div class="home-menu-thumb position-relative fix">
+                    <img src="assets/beauty.jpeg" alt="">
+                  </div>
+                  <div class="home-menu-content">
+                    <h5 class="home-menu-title">Electronic</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="home-menu-item">
+                <a class="dropdown-item" href="">
+                  <div class="home-menu-thumb position-relative fix">
+                    <img src="assets/beauty.jpeg" alt="">
+                  </div>
+                  <div class="home-menu-content">
+                    <h5 class="home-menu-title">Electronic</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="home-menu-item">
+                <a class="dropdown-item" href="">
+                  <div class="home-menu-thumb position-relative fix">
+                    <img src="assets/beauty.jpeg" alt="">
+                  </div>
+                  <div class="home-menu-content">
+                    <h5 class="home-menu-title">Electronic</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="home-menu-item">
+                <a class="dropdown-item" href="">
+                  <div class="home-menu-thumb position-relative fix">
+                    <img src="assets/beauty.jpeg" alt="">
+                  </div>
+                  <div class="home-menu-content">
+                    <h5 class="home-menu-title">Electronic</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

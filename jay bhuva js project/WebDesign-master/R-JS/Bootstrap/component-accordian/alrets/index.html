@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+
+</head>
+
+<body>
+    <!-- Bootstrap Alert Message-->
+    <!-- <div class="container">
+        <div class="box ">
+            Hover Me And Show An Alert Massage
+            <div class="alert alert-danger" role="alert">
+                A simple primary alert-chek it out!
+            </div>
+        </div> -->
+
+        <!-- live alert -->
+        <!-- <div class="full mt-5">
+
+            <button type="button" class="btn btn-success" id="liveAlertBtn"> click here for alert</button>
+            <div class="livealert alert alert-primary" role="alert">Nice, you triggered this alert message!</div>
+        </div>
+    </div> -->
+
+    <!-- link color -->
+    <!-- <div class="container mt-5">
+        <div class="alert alert warning" role="alert"> A Simple warning alert with <a class="alert-link" href="">an
+                example link</a>.Give It a click If you like.
+        </div>
+    </div> -->
+
+    <!-- Bootstrap Badges -->
+    <!-- <div class="container">
+        <button class="btn btn-primary position-relative">
+            Notification
+            <span
+                class="badge bg-danger position-absolute rounded-pill top-0 start-100 translate-middle border border-5">
+                4
+            </span>
+        </button>
+    </div>
+
+    <div class="container mt-5">
+        <button class="btn btn-success position-relative">
+            Notification
+            <span
+                class="badge bg-warning position-absolute rounded-pill end-10 start-0  bottom-10 translate-middle border border-5">
+                4
+            </span>
+        </button>
+    </div>
+    <div class="container mt-5">
+        <button class="btn btn-secondary position-relative rounded-pill px-5 py-3">
+            Notification
+            <span
+                class="badge rounded-pill bg-dark position-absolute rounded-pill  start-50 end-0 translate-middle border border-5">
+                4
+            </span>
+        </button>
+    </div>
+    <div class="container mt-5">
+        <h1>h1 Example heading <span class="badge bg-secondary">New</span></h1>
+        <h2>h2 Example heading <span class="badge bg-secondary">New</span></h2>
+        <h3> h3 Example heading <span class="badge bg-secondary">New</span></h3>
+        <h4> h4 Example heading <span class="badge bg-secondary">New</span></h4>
+        <h5>h5 Example heading <span class="badge bg-secondary">New</span></h5>
+        <h6>h6 Example heading <span class="badge bg-secondary">New</span></h6>
+        <div class="badge-para">
+            All example for badge!!!
+        </div>
+    </div> -->
+
+     <!-- Bootstrap Breadcumb-->
+     <!-- <div class="container mt-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+          </nav>
+          
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+          </nav>
+          
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+          </nav>
+     </div> -->
+     <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+      </div>
+
+    <div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+     
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Nice, you triggered this alert message!', 'success')
+  })
+}
+    </script>
+</body>
+
+</html>

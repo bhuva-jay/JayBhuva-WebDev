@@ -1,0 +1,62 @@
+.main{
+    position: relative;
+}
+
+
+.moutain img{
+    position: absolute;
+    height:800px;
+    width: 100%;
+
+
+}
+.sun img{
+    position: absolute;
+    height: 200px;
+    
+    z-index: -20;
+    margin: 300px 450px;
+    animation: run 10s infinite linear;
+}
+
+@keyframes run{
+    from{
+        transform: translateY(100PX);
+    }
+    to{
+        transform: translateY(-600px);
+    }
+}
+.cloud1 img{
+    height: 200px;
+    /* width: 200px; */
+
+    position: absolute;
+    animation:move 7s infinite linear;
+
+}
+@keyframes move{
+    form{
+         transform:translatex(0px);
+    }
+    to{
+        transform: translatex(1200px);
+
+    }
+}
+.cloud2 img{
+    position: absolute;
+    right: 0px;
+    height: 200px;
+    /* width: 200px; */
+    animation:play 5s infinite linear ;
+
+}
+@keyframes play{
+    from{
+         transform: translateX(0px);
+    }
+    to{
+     transform: translateX(-1000px);
+    }
+}

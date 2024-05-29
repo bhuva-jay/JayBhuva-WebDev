@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+}
+.rgba{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(168, 41, 151, 0);
+}
+
+.hex{
+    height: 300px;
+    width: 300px;
+    background-color:#0000ff ;
+}
+/* css background properties */
+
+.background{
+    background-image: url('../image/smiley-businesswoman.avif') ,url('../image/small.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-blend-mode: multiply;
+}
+.box{
+    height: 300px;
+    width: 300px;
+    border:50px solid transparent;
+    padding: 50px;
+    background:radial-gradient (blue, red, violet, gray, green);
+     background-image: url('../image/smiley-businesswoman.avif'); 
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center; 
+     background-attachment: scroll;
+     background-clip: border-box;
+    background-origin:conten    t-box;  
+} 
+
+ /* .box{
+    height: 300px;
+    width: 300px;
+    background-image: url('../image/big.jpg');
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+}  */
+
+.linear-gradient-1{
+    height: 500px;
+    width:100%;
+    background: linear-gradient(to right, red, blue , yellow);
+}  
+.diagonal-linear-gradient {
+    height: 500px;
+    width:100%;
+    background: linear-gradient(to right yellow 20%, to left red 80%);
+
+} 
+
+.linear-gradient-rainbow {
+    height: 500px;
+    width:500px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to top, red, orange, yellow, green, blue, indigo, violet)
+     } 
+
+.linear-gradient-rainbow p{
+    font-size: 20px;
+    color: red;
+    width: 500px;
+    text-align: center;
+    }
+.radial-gradient-simple {
+    height: 800px;
+    width:100%;
+    background: radial-gradient( red, orange, yellow, green, blue, indigo, violet);
+}
+
+.bullseye {
+    height: 100vh;
+    width:100%;
+    background: repeating-radial-gradient(red, red 5%, white , white 20%);
+} 
+
+.warning {
+    height: 100vh;
+    width:100%;
+    background: repeating-linear-gradient(-30deg, yellow, yellow 10%, black 10%, black 20% );
+} 
+.conic{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+    background-image: conic-gradient(red, rgb(208, 255, 0), rgb(128, 0, 102));
+    /* background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%); */
+} 
+
+.solid{
+    width: 100px;
+    height: 400px;
+    background-color: orange;
+    border:10px solid rgb(7, 12, 7);
+    
+}   
+.dotted{
+    width: 100px;
+    height: 450px;
+    background-color: orange;
+    border:10px dotted green;
+}
+.dashed{
+    width: 100px;
+    height: 500px;
+    background-color: orange;
+    border:10px dashed green;
+}
+.double{
+    width: 100px;
+    height: 550px;
+    background-color: orange;
+    border:10px double green;
+}
+.hidden{
+    width: 100px;
+    height: 600px;
+    background-color: orange;
+    border:10px hidden green;
+}
+.none{
+    width: 100px;
+    height: 600px;
+    background-color: orange;
+    border:10px none green;
+}
+.ridge{
+    width: 100px;
+    height: 550px;
+    background-color: orange;
+    border:10px ridge green;
+}
+.inset{
+    width: 100px;
+    height: 500px;
+    background-color: orange;
+    border:10px inset green;
+}
+.groove{
+    width: 100px;
+    height: 400px;
+    background-color: orange;
+    border:10px groove green;
+} 
+.border{
+    height: 300px;
+    width: 300px;
+    border:20px solid green;
+    border-top:30px solid red;
+    border-right:40px dashed blue;
+    border-right-color:orange;
+    border-top-style:dotted;
+}
+font-family: 'Kalam', cursive;
+
+.maindiv{
+    position: relative;
+}
+.border-radius{
+    height: 400px;
+    width: 400px;
+    border:10px solid green;
+    border-radius: 20px;
+    border-radius: 20px 40px;
+    border-radius: 20px 40px 60px;
+    border-radius: 20px 40px 60px 80px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.border-radius img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    object-position: top;
+    position: absolute;
+}
+.circle{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+    border-radius: 100%;
+    overflow: hidden;
+    border:10px solid white;
+}
+.circle img{
+    height: 200px;
+    width: 200px;
+} 
+.outline{
+    height: 200px;
+    width: 200px;
+    border:10px solid orange;
+    margin: 200px;
+    outline: 10px dotted green;
+    outline-offset: 10px    ;
+} 
+.opacity{
+    height: 300px;
+    width: 300px;
+    background-color: rgba(255,0,0,0.5);
+    text-align: center;
+    font-style:var();
+}

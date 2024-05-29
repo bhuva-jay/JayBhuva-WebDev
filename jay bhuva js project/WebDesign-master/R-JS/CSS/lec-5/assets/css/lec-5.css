@@ -1,0 +1,100 @@
+/* css width / height */
+
+ .demo-div{
+    height: auto;
+    max-width: 400px;
+    background-color: orange;
+    border:10px solid black;
+    border-radius: 5%;
+}
+
+.img-fluid{
+    max-width: 400px;
+    height: auto;
+}
+
+ol{
+    list-style-type:decimal-leading-zero;
+    list-style-position:inside;
+    list-style-image: url('../image/monkey-face.png');
+}
+
+ul{
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+ul li::marker{
+    color:green;
+    
+}
+
+/* css box-shadow */
+
+ .maindiv{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow{
+    height: 400px;
+    width: 300px;
+    border:2px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px gray;
+    box-shadow:inset 0px 0px 10px 20px gray ,inset 0px 0px 10px 20px yellow , inset 0px 0px 10px 20px red ,inset 0px 0px 10px 50px blue;
+} 
+
+/* accent-color*/
+
+/* input{
+    accent-color: red;
+}
+
+input[type="checkbox"]{
+    accent-color: yellow;
+} 
+
+::placeholder{
+    color:red;
+} */
+
+/* input:focus{
+    background-color: gray;
+    outline: none;
+    border: none;
+} */
+
+/* input:hover{
+    background-color: orange;
+} 
+
+input:invalid{
+    border:2px solid red;
+} 
+/* .message{
+    height: 20px;
+    width: 200px;
+    background-color: red;
+     /* display: none; */
+
+/* input:valid{
+    border:2px solid green;
+} */
+ 
+input:invalid .message{
+    display:block;
+} 
+:root{
+    --color:red;
+    --color:green;
+}
+.box{
+    height: 100px;
+    width: 200px;
+    background-color: var(--color);
+}
+
+

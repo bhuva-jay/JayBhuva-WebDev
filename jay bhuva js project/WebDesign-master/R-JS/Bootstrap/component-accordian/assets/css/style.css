@@ -1,0 +1,10 @@
+.accordion-button{
+    color: blue;
+}
+.accordion-button::after{
+    content: "";
+    background-image: url(../css/svg.svg);
+}
+.accordion-button svg{
+    fill: currentColor;
+}

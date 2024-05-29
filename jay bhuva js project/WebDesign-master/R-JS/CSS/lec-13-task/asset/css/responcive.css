@@ -1,0 +1,53 @@
+@media (max-width:1200px) {
+
+    .grid>div {
+        font-size: 30px;
+        text-align:center;
+        border:2px solid black;
+        padding:20px 0;
+        color:white;
+    }
+   
+    .grid {
+        display: grid;
+        grid-template-columns: auto ;
+        /* grid-template-rows: auto auto 200px 150px; */
+        gap: 1px;
+        padding: 10px;
+        width:100%;
+        height: auto;
+    }
+   
+    .title {
+        font-size: 30px;
+    }
+   
+    .grid-1 {
+        background-color: black;
+        height: 80px;
+    }
+   
+    .grid-2 {
+        background-color: rgb(194, 116, 116);
+    }
+   
+    .grid-3 {
+        background-color: rgb(122, 105, 201);
+    }
+   
+    .grid-4 {
+        background-color: rgb(44, 21, 75);
+    }
+   
+    .grid-5 {
+        background-color: rgb(240, 243, 81);
+    }
+   
+    .grid-6 {
+        background-color: rgb(31, 189, 123);
+    }
+   
+    .grid-7 {
+        background-color: rgb(138, 191, 216);
+    }
+}

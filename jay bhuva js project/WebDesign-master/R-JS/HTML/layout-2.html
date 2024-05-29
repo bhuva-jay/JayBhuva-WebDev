@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Layout-02</title>
+    <style>
+       table, th, td {
+            border: 3px solid black;
+            padding: 30px;
+            font-size: 28px ;
+            color: black;
+        }
+        table {
+            text-align: center;
+            width: 100%;
+            padding: 0;
+        }
+        th {
+            background-color: blueviolet;
+            color: black;
+            font-size: 32px;
+        }
+        h1 {
+            padding: 0;
+            margin: 0;
+        }
+        nav a {
+            font-size: 20px;
+            color: black;
+            text-decoration: none;
+            padding: 0 35px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+            <th colspan="5"><h1>head</h1> </th>
+            </tr>
+        </thead>
+        <tr>
+            <th colspan="5">
+                <div>
+                    <nav style="background-color: gray;">nav</nav>
+                </div>
+            </th>
+        </tr>
+        <tr>
+        </tr>
+
+        <tr style="background-color: #b3b3b3;">
+            <td style="height: 290px;">column-01</td>
+            <td style="background-color: palevioletred;">column-02</td>		
+            <td>column-03</td>
+            <td style="background-color: palevioletred;">column-04</td>
+            <td>column-05</td>
+        </tr>
+        <tr>
+            <th colspan="5" style="background-color: gold ;">Footer </th>
+            </tr>
+      </table>
+</body>
+
+</html>

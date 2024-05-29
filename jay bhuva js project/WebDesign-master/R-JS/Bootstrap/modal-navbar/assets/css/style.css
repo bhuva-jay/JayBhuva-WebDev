@@ -1,0 +1,11 @@
+.modal-header{
+    background-color: red;
+    justify-content: center;
+}
+  
+.x-mark{
+     font-size: 50px;
+     text-align: center;
+     align-items: center;
+     margin-left: 220px;
+}

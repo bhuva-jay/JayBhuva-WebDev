@@ -1,0 +1,168 @@
+
+
+
+
+/* Base styles */
+/* Add your base CSS styles here */
+
+/* Adjustments for screens above 1400px */
+@media only screen and (min-width: 1600px) {
+   .maindiv-1 {
+     padding-left: 120px;
+     flex-wrap: wrap;
+   }
+   .maindiv-2{
+     padding-left: 120px;
+     flex-wrap: wrap;
+   }
+ }
+ 
+ /* Adjustments for screens between 1200px and 1400px */
+ @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+   .maindiv-1 {
+     padding-left: 100px;
+   }
+ }
+ 
+ /* Adjustments for screens between 912px and 1200px */
+ @media only screen and (min-width: 913px) and (max-width: 1200px) {
+   .maindiv-1 {
+     padding-left: 80px;
+   }
+   .maindiv-1 main-nav nav a {
+     display: none;
+   }
+ }
+ 
+ /* Adjustments for screens between 768px and 912px */
+ @media only screen and (min-width: 769px) and (max-width: 912px) {
+   body {
+     text-align: center;
+     flex-wrap: wrap;
+   }
+   .maindiv-1 {
+     padding-left: 60px; 
+      flex-wrap: wrap; 
+   }
+ 
+   .maindiv-2 {
+     flex-wrap: wrap;
+   }
+   .maindiv-2 bg-img {
+     flex-wrap: wrap;
+   }
+ }
+ 
+ @media only screen and (max-width: 768px) {
+   .maindiv-1 {
+     padding-left: 40px;
+   }
+ 
+   .maindiv-2 h1 {
+     font-size: 40px;
+   }
+ 
+   .maindiv-2 p {
+     font-size: 16px;
+   }
+ 
+   .maindiv-3 {
+     padding-left: 30px;
+     padding-right: 30px;
+   }
+ 
+   .maindiv-4 {
+     margin-left: 50px;
+     margin-right: 50px;
+   }
+ 
+   .maindiv-5 {
+     margin-top: 50px;
+     margin-bottom: 50px;
+   }
+ 
+   .maindiv-6 {
+     margin-left: 50px;
+   }
+ 
+   .maindiv-7 h1 {
+     font-size: 30px;
+   }
+ 
+   .maindiv-7 p {
+     font-size: 16px;
+   }
+ 
+   .maindiv-8 {
+     margin: 20px;
+   }
+ 
+   .maindiv-8 .p1,
+   .maindiv-8 .p2,
+   .maindiv-8 .p3 {
+     margin-left: 20px;
+   }
+ 
+   .ft1 .b1 {
+     margin-left: 100px;
+   }
+ 
+   .ft1 .b2,
+   .ft1 .b3 {
+     margin-left: 20px;
+   }
+}
+ @media only screen and (max-width:800px) { 
+
+/* For tablets: */
+ .maindiv-1 {
+        width: 80%;
+        padding: 0;
+    }
+        .maindiv-2 {
+            width: 80%;
+            padding: 0;
+        }
+        
+.maindiv-3 {
+    width: 80%;
+    padding: 0;
+}
+    .right {
+        width: 100%;
+    }
+} 
+
+ @media only screen and (max-width:500px) { 
+
+/* For mobile phones: */
+ .menu,
+    .main,
+    .right {
+        width: 100%;
+    }
+} 
+
+ @media (max-width:320) {
+    .maindiv-1{
+        max-width: 320px;
+        display: flex;
+        background-color: aqua;
+    }
+    a{
+        display: none;
+    }
+     .bg-text{
+        order: 2;
+        text-align: center;
+        max-width: 350px;
+     }
+     .bg-image{
+        order: 1;
+     }
+     .bg-image{
+        max-width: 100%;
+        height: auto;
+     }
+
+} 

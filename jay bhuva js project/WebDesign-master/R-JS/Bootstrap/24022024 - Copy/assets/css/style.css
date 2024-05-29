@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(231, 120, 139);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-w{
+    position: absolute;
+    height:230px ;
+    width:204px ;
+    background-color: white;
+    margin-top: 840px;
+    margin-left: -51px;
+    
+    
+}
+.box-b{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+    rotate: 45deg;
+    margin: 475px 260px 10px 10px;
+}
+.box-y{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(230, 230, 99);
+    rotate: 30deg;
+    margin: 420px -86px 10px 10px ;
+}

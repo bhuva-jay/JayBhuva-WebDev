@@ -1,0 +1,49 @@
+.masking {
+    -webkit-mask-image: url(../batman.png);
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    width: 100%;
+    mask-image: url(../batman.png);
+}
+.masking img {
+    width: 100%;
+}
+.tooltip {
+    height: 40px;
+    width: 200px;
+    background-color: violet;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 200px;
+    text-align: center;
+    vertical-align: baseline;
+    line-height: 200%;
+    position: relative;
+}
+.tip p {
+    color: black;
+    font-size: 10px;
+    background-color: yellowgreen;
+}
+.tip {
+    display: none;
+    position: absolute;
+    top: -70px;
+    width: 100%;
+}
+.tooltip:hover .tip {
+    display: block;
+}
+.sqare {
+    height: 20px;
+    width: 20px;
+    background-color: yellowgreen;
+    position: absolute;
+    bottom: 0;
+    left: 90px;
+    right: 0;
+    margin: 0;
+    transform: rotate(45deg);
+}

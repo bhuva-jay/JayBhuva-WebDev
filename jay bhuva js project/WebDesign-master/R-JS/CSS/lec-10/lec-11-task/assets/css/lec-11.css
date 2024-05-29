@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+}
+
+.main{
+    background-image: url(../image/bg.jpg);
+    height: 950px;
+    background-size: cover;
+    background-position: bottom;
+}
+.ball{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    left: -10px;
+    bottom: 200px;
+    background-image: url(../image/ball.png);
+    background-size: cover;
+    /* align-items: center; */
+     animation: bolling 5s infinite;
+    animation-timing-function: linear;
+
+}
+.stump{
+    position: absolute;
+    height: 250px;
+    width: 100px;
+    background-image: url(../image/stamp_01.png);
+    bottom: 20px;
+    right: 0;
+    background-size: cover;
+    animation: out 5s infinite;
+    /* animation-timing-function: linear; */
+
+}
+@keyframes bolling{
+    0%{
+        left: -10%;
+    }
+    65%{
+        left: 65%;
+        bottom: 0;
+    }
+    100%{
+        left: 95%;
+        bottom: 20%;
+    }
+}
+  @keyframes out {
+    0%{
+      background-image: url(../image/stamp_01.png);
+    }
+    90%{
+      background-image: url(../image/stamp_01.png);
+    }
+    100%{
+      background-image: url(../image/stamp_02.png);
+        
+    }
+}

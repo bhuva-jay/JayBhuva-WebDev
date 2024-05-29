@@ -1,0 +1,38 @@
+/* <!--color:red, background-color:yellow--> */
+/* <!-- follow # --> */
+
+
+/* h1:first-child{
+    color:red;
+     background-color:yellow;
+} */
+
+input[type]{
+    color:red;
+    background-color:yellow;
+}
+header::nth-child(4){
+    color:red;
+    background-color:yellow;
+}
+/* a[href="#"]{
+    color:red;
+    background-color:yellow;
+} */
+a[target="_self"]{
+    color:red;
+    background-color:yellow;
+}
+a::nth-child(1){
+    color:red;
+    background-color:yellow;
+    h1:nth-child(6){
+        background-color: yellow;
+        color:red;
+       }
+
+       div:nth-of-type(2) h1:nth-child(2){
+        background-color: yellow;
+        color:red;
+       }
+}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+a {
+    text-decoration: none;
+}
+body{
+    font-family:jost, sans-serif ;
+}
+
+/* Navbar start */
+
+.navbar{
+    z-index: 100;
+    width: 100%;
+}
+.reminder{
+    height: 22px;
+    width: 22px;
+}
+.reminder span{
+    line-height: 0;
+}
+.icons{
+    margin: 0 0 0 70px;
+}
+.icons span i{
+    font-size: 22px;
+}
+.winter-text{
+    position: absolute;
+    top:20 ;
+}
+.winter-text h3 {
+    font-family: jost, sans-serif;
+    font-size: 100px;
+    text-align: start;
+    letter-spacing: normal;
+     color: white;
+}
+.fa-chevron-down{
+    font-size: 12px;
+    color: #010b14;
+}
+.navbar-nav{
+    font-family: jost, sans-serif;
+    color: #010b14;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: normal;
+    text-align: left;
+    font-weight: 500;
+
+}
+.five-img p{
+    font-size: 18px;
+    color: #010b14;
+    font-weight: 500;
+
+}
+.five-img li a img{
+    height:125px;
+    width: 125px;
+    box-shadow: 0px 2px 6px rgba(1, 15, 28, 0.2);
+
+}
+/* .heart{
+   height: 50px;
+   width: 50px; 
+} */
+.dropdown-toggle::after {
+    display: none;
+}
+.winter-text span {
+    font-family: jost, sans-serif;
+    font-size: 30px;
+    text-align: start;
+    color: white;  
+    font-style: italic;  
+}
+
+.high-end {
+   color: white;  
+}
+
+.maskara img {
+    height: 40px;
+    width: 40px;
+}
+
+.vegan img {
+    height: 25px;
+    width: 25px;
+}
+
+.make-up img {
+    height: 25px;
+    width: 25px;
+}
+
+.discover a:hover {
+    background-color: black;
+}
+
+.carousel-item:nth-child(1) img{
+    width: 125%;
+}
+.carousel-item:nth-child(2) img{
+    transform: scale(1.1);
+    object-position: center;
+}
+.carousel-item:nth-child(3) img{
+    width: 120%;
+}
+img.d-block.object-fit-cover {
+    position: relative;
+}
+.winter-text {
+    position: absolute;
+    top: 20%;
+}
+

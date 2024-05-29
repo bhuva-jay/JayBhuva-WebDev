@@ -1,0 +1,33 @@
+.box{
+    height: 50px;
+    width: 300px;
+    background-color: yellow;
+    border:10px solid red;
+    border-radius: 10px;
+    position: relative;
+  }
+  .alert{
+    display: none;
+  }
+  .box:hover .alert{
+    display: block;
+    position: absolute;
+    bottom: -100px;
+  }
+   live alert 
+  .full{
+    position: relative;
+  }
+  .livealert{
+    display: none;
+  }
+  .full:focus-within .livealert{
+    display: block;
+    position: absolute;
+  }     
+  .badge:hover .para{
+
+  }
+  .badge-para{
+    /* display: none; */
+  }

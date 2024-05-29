@@ -1,0 +1,74 @@
+/*  
+    CSS FONT PROPERTIES
+	CSS TEXT PROPERTIES
+	CSS VERTICLE ALIGN
+    CSS WHITE SPACE
+    CSS VISIBILITY
+*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.font-family{
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Kalam', cursive; */
+    font-weight:bold;
+    font-size:200%;
+    font-style: normal;
+    font-variant: small-caps;
+    line-height: 70px;
+    background-color: antiquewhite;
+    border-radius: 1%;
+    border: solid black;
+}
+
+.maindiv{
+    text-align: justify;
+}
+.text{
+    color:red;
+    text-transform: capitalize;
+    text-indent: 100px;
+    letter-spacing: 20px;
+    word-spacing: 20px;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+span{
+    text-decoration: line-through green dotted;
+}
+a{
+    text-decoration: underline;
+} 
+
+.shadow{
+    text-shadow: 5px 5px 1px gray;
+}
+
+h1{
+    font-size: 100px;
+    text-decoration:underline ;
+}
+img{
+    vertical-align:middle;
+    viewport-fit:contain                                                                                            ;
+} 
+
+ .white-space{
+    white-space:;
+} 
+
+p{
+    visibility:visible;
+} 
+
+
+h1{
+    visibility:inherit;
+    display:contents;
+} 

@@ -1,0 +1,226 @@
+body{
+    margin: 0%;
+}
+body{
+    align-items: center;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+
+}
+
+ .text{
+    padding: 0 120px;
+    text-align: center;
+ } 
+ .text  h1 {
+    font-size: 64px;
+font-family: 'Kalam', cursive;
+    font-weight: 500;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    
+}
+.text a{
+    background-color: white;
+    border: 1px solid #af69ee;
+    text-decoration: none;
+    color: black;
+    padding: 7px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+}
+.text a:hover{
+    background-color: #5128f5;
+    color: white;
+    transition: ease 0.5s;
+
+}
+.bt_line{
+    position: relative;
+}
+.bt_line::after {
+    content: '';
+     display: block;
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #000000;
+    transform: translate(20%, -15px);
+        z-index: 0;   
+}
+.bt_line::before {
+    content: '';
+     display: block;
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #000000;
+    transform: translate(305%, 10px);
+        z-index: 0;       
+}
+/* option-2  */
+
+
+ .opt_2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 500px;
+    background: rgb(235, 151, 193);
+    width: 1300px;
+    padding-top: 100px;  
+    overflow: hidden; 
+} 
+.bg {
+    height: 250px;
+    width: 100%;
+    position: absolute;    
+    bottom: 0;    
+}
+
+.bg::after{
+    content: '';
+    background-color: #eec4db;
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 800px;
+    height: 800px;
+    transform: translate(-21%, -113%);
+    z-index: 0;
+    
+}
+.bg::before{
+    content: '';
+    background-color: #ce6490;
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 1200px;
+    height: 1200px;
+    transform: translate(70%, -30%);
+    
+}
+
+.box {
+    height: 300px;
+    width: 300px;
+    background-color: #5128f5;
+    padding-top: 50px;
+    position: absolute;
+    right: 0;
+    left: 510px;
+    bottom: 100px;
+    border-radius: 30px;
+    box-shadow: -10px 10px 5px 5px white;    
+}
+.box h2 {
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    font-family:'Poppins', sans-serif ;
+    text-shadow: 10px 10px 10px black;
+}
+
+/* <!-- option-3 --> */
+.option_2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 500px;
+    padding-top: 100px;
+    background: #f1b9de;
+    width: 1300px;
+    overflow: hidden;
+}
+.background_2 {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.background_2::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 350px;
+    height: 350px;
+    background-color: #fef4eb;
+    right: 0;
+    top: 180px;
+}
+.background_2::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 1000px;
+    height: 1000px;
+    background-color: #efa3d4;
+    transform: translate(-20%, -50%);
+    z-index: 0;
+}
+.bg_2 {
+	text-align: center;
+	display: inline-block;
+}
+.box_2 {
+    height: 230px;
+    width: 230px;
+    background-color: #3167ee;
+    top: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    left: 60px;
+    border-radius: 18px;
+    box-shadow: -7px 8px 0px 6px skyblue;
+    z-index: 99;
+}
+.box_2 h2 {
+    text-align: center;
+    font-size: 76px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.box_bg {
+    background-color: #fef4eb;
+    height: 320px;
+    width: 1000px;
+    top: -187px;
+    position: relative;
+    right: 0;
+    left: 150px;
+    border-radius: 15px;
+    box-shadow: -7px 8px 0px 6px white;
+    z-index: 99;
+    border: 8px solid;
+}
+.box_2-text p {
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    line-height: 72px;
+    text-align: left;
+}
+.box_2-text {
+    position: absolute;
+    text-align: 0;
+    top: -13px;
+    left: 280px;
+    width: 1000px;
+}
+
+
+
+
+ 
