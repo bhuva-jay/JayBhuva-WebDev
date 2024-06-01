@@ -27,7 +27,10 @@
     /* border:1px solid black; 
 } */
 
-
 .accordion .accordion-item:hover .collapse:not(.show){
     display: block;
+}
+
+.carousel{
+    height: 100vh;
 }
