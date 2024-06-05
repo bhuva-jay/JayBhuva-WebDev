@@ -11,7 +11,83 @@
 </head>
 
 <body>
-  <div class="dropdown">
+<!-- placeholder class -->
+<div class="container">
+  <div class="card" aria-hidden="true">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPo82ju5dMGQtJC26vJN9piWO_xwxG11KH7g&s" class="card-img-top bg-danger " alt=""  height="100" width="100">
+    <div class="card-body">
+      <h5 class="card-title placeholder-glow bg-danger">
+        <span class="placeholder col-6"></span>
+      </h5>
+      <p class="card-text placeholder-glow bg-info">
+        <span class="placeholder col-7"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-4"></span>
+        <span class="placeholder col-6"></span>
+        <span class="placeholder col-8"></span>
+      </p>
+      <a class="btn btn-success disabled placeholder col-6" aria-disabled="true"></a>
+    </div>
+  </div>
+</div>
+
+<div class="conainer d-flex justify-content-center mt-5">
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link text-bg-primary" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">4</a></li>
+      <li class="page-item">
+        <a class="page-link text-bg-primary" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="container">
+  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">click hear </button>
+
+  <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body small">
+      <div class="h-100 d-flex">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPo82ju5dMGQtJC26vJN9piWO_xwxG11KH7g&s" alt="">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae adipisci provident repellat sunt rerum voluptates dolorum minus ea obcaecati, aliquam porro cum iure repellendus. Deleniti exercitationem pariatur commodi inventore incidunt!</h1>
+      </div > 
+      <div class="d-flex  justify-content-end">
+        <h2 class="align-items-end">thank you, visit again 	
+          &#128591;</h2>
+      </div>
+         
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <div class="dropdown">
     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       Dropdown button
     </button>
@@ -155,7 +231,7 @@
     <li><a class="dropdown-item" href="#">Another action</a></li>
     <li><a class="dropdown-item" href="#">Something else here</a></li>
   </ul>
-</div>
+</div> -->
   <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
