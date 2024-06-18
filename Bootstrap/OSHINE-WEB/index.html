@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OSHINE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="asset/css/style.css">
+  <!-- https://oshinewptheme.com/v14/ link site -->
+  <style>
+    /* Additional styling to make the map full width and height */
+    #map {
+      height: 100vh;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR SATRT -->
+  <header class=" fixed-top bg-light ">
+    <div class="container bg-light ">
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="asset/images/asset 0.png" alt="">
+          </a>
+          <div class="d-flex align-items-center">
+            <div class="d-block d-lg-none me-3">
+              <span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </span>
+            </div>
+            <button class="navbar-toggler order-2" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">TEAM</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">WORK</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">PRICING</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CLIENTS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT</a>
+                </li>
+            </div>
+          </div>
+          <div class="d-none d-lg-block">
+            <span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- NAVBAR END -->
+  <!-- section 2 start -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <!-- <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 2"></button> -->
+    </div>
+    <div class="carousel-inner h-100">
+      <div class="carousel-item active h-100">
+        <img
+          src="https://img.freepik.com/free-photo/laptop-yellow-cup-stationeries-wooden-table_23-2147956638.jpg?size=626&ext=jpg "
+          class="d-block object-cover img-fluid w-100 " alt="..." style="height:950px;">
+        <!-- https://cdn.pixabay.com/photo/2017/05/11/11/15/workplace-2303851_640.jpg -->
+        <!-- "https://img.freepik.com/free-photo/laptop-yellow-cup-stationeries-wooden-table_23-2147956638.jpg?size=626&ext=jpg -->
+        <div class="carousel-caption d-flex text-black h-100 flex-column justify-content-center">
+          <h1 class="fw-bold"> WELLCOME TO OSHINE</h1>
+          <p class="h3 fw-bold .fs-1 text">A High Quality Multi-Layout Multi Purpose Premeium<br>Wordpress Theame With
+            16 stunning demos</p>
+          <div class=" container justify-content-center d-flex gap-5 mt-2 ">
+            <button class="fw-bold btn  learn">LEARN MORE</button>
+            <button class="fw-bold btn purchase">PURCHASE NOW</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item h-100">
+        <img
+          src="https://oshine.wpengine.com/v14/wp-content/uploads/sites/16/revslider/v14-home/oshin-single-rev-bg.jpg"
+          class="d-block w-100 img-fluid " alt="...">
+        <div class="carousel-caption d-flex text-black h-100 flex-column justify-content-center">
+          <h1 class=" fw-bold fs-1 text">ITS TIME TO ROCK</h1>
+          <p class="h3 fw-bold">Have An Idea Or Project ? Tets Collaborate And Bulid a <br>Stnning Website One Of Our 16
+            Stunning Demos.</p>
+          <div>
+            <button type="btn" class=" fw-bold  btn  mt-2    purchase">PURCHASE
+              NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  </div>
+  <!-- section 1 end -->
+  <!-- section 2 start -->
+  <div class="container-fluid py-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <img src="./asset/images/Screenshot_2024-06-07_114834-removebg-preview (1).png" alt="Anchor Icon" class="mb-4">
+        <h2 class="display-4">We are Oshine, a beautiful responsive multi-purpose wordpress theme that</h2>
+        <p class="lead">comes with 15 unique and stunning demos. We have crafted each and every demo with extensive care
+          and precision and the theme is power packed yet easy to use.</p>
+        <a href="#" class="btn btn-primary btn-lg">Our Work</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- section 2 end -->
+  <!-- SECTION 3 STRAT -->
+  <section class="bg-light py-5">
+    <div class="container text-center position-relative">
+      <h2 class="text-center mb-5">OUR TEAM</h2>
+      <div class="position-relative d-inline-block">
+        <p class="text-center mb-0 we-content d-inline-block fst-italic">We put our people first</p>
+        <span class="ab-content"></span>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-3 mb-4">
+          <div class="card card-i border-0 rounded-0 bg-light">
+            <div class="card-image">
+              <img src="https://oshine.wpengine.com/v14/wp-content/uploads/sites/16/2014/11/team-v8-1.jpg"
+                class="card-img-top rounded-0" alt="Robert Prince">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-normal">Robert Prince</h5>
+              <p class="card-text">Director</p>
+              <p class="card-text">Ea me nostrum imperidet detemisset mei ludus efficienf ei. Sea sumo maxim ex, ea
+                errem eleifend definitionem vim.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card card-i border-0 rounded-0 bg-light">
+            <div class="card-image">
+              <img src="https://oshine.wpengine.com/v14/wp-content/uploads/sites/16/2014/11/team-v8-3.jpg"
+                class="card-img-top rounded-0" alt="Lisa">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-normal">Lisa</h5>
+              <p class="card-text">CEO</p>
+              <p class="card-text">Ea me nostrum imperidet detemisset mei ludus efficienf ei. Sea sumo maxim ex, ea
+                errem eleifend definitionem vim.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card card-i border-0 rounded-0 bg-light">
+            <div class="card-image">
+              <img src="https://oshine.wpengine.com/v14/wp-content/uploads/sites/16/2014/11/team-v8-2.jpg"
+                class="card-img-top  rounded-0" alt="James">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-normal">James</h5>
+              <p class="card-text">Marketing and Sales</p>
+              <p class="card-text">Ea me nostrum imperidet detemisset mei ludus efficienf ei. Sea sumo maxim ex, ea
+                errem eleifend definitionem vim.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="card card-i border-0 rounded-0 bg-light">
+            <div class="card-image">
+              <img src="https://oshine.wpengine.com/v14/wp-content/uploads/sites/16/2014/11/team-v8-4.jpg"
+                class="card-img-top rounded-0" alt="Jane">
+            </div>
+            <div class="card-body text-center">
+              <h5 class="card-title fw-normal">Jane</h5>
+              <p class="card-text">Chief Designer</p>
+              <p class="card-text">Ea me nostrum imperidet detemisset mei ludus efficienf ei. Sea sumo maxim ex, ea
+                errem eleifend definitionem vim.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SECTION 3 END -->
+<!-- SERVICES section start -->
+  <section class="services">
+    <div class="container  text-center position-relative">
+      <h2 class="text-center mb-4 mt-5">OUR SERVICES</h2>
+      <div class="position-relative d-inline-block">
+        <p class="text-center mb-0 we-content d-inline-block fst-italic">There is magic in what we do</p>
+        <span class="ab-content"></span>
+      </div>
+      <div class="row mt-5 hover-h">
+        <div class="col-md-4 mb-4">
+          <div class="service-item text-center align-items-center ">
+            <div class=" mb-3 d-flex justify-content-center align-items-center  ">
+              <div class=" bg-info rounded-circle " style="height: 70px; width: 70px; display: flex; justify-content: center; align-items: center;">
+                <i class="fas fa-question-circle fa-3x text-white  "></i>
+              </div>
+            </div>
+            <h4>Branding</h4>
+            <p>Nesque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit, sed quia non
+              numquam eius modi tempora incidunt.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="service-item text-center">
+            <div class=" mb-3 d-flex justify-content-center align-items-center  ">
+              <div class=" bg-info rounded-circle " style="height: 70px; width: 70px; display: flex; justify-content: center; align-items: center;">
+                <i class="fas fa-lightbulb fa-3x fa-3x text-white "></i>
+              </div>
+            </div>
+            <h4>Marketing</h4>
+            <p>Nesque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit, sed quia non
+              numquam eius modi tempora incidunt.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="service-item text-center">
+            <div class=" mb-3 d-flex justify-content-center align-items-center  ">
+              <div class=" bg-info rounded-circle " style="height: 70px; width: 70px; display: flex; justify-content: center; align-items: center;">
+                <i class="fas fa-desktop fa-3x fa-3x text-white  "></i>
+              </div>
+            </div>
+            <h4>Development</h4>
+            <p>Nesque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit, sed quia non
+              numquam eius modi tempora incidunt.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="service-item text-center">
+            <div class=" mb-3 d-flex justify-content-center align-items-center  ">
+              <div class=" bg-info rounded-circle " style="height: 70px; width: 70px; display: flex; justify-content: center; align-items: center;">
+                <i class="fas fa-desktop fa-3x fa-3x text-white  "></i>
+              </div>
+            </div>
+            <h4>Web Design</h4>
+            <p>Nesque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit, sed quia non
+              numquam eius modi tempora incidunt.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="service-item text-center">
+            <div class=" mb-3 d-flex justify-content-center align-items-center  ">
+              <div class=" bg-info rounded-circle " style="height: 70px; width: 70px; display: flex; justify-content: center; align-items: center;">
+                <i class="fas fa-share-alt  fa-3x text-white  "></i>
+              </div>
+            </div>
+            <h4>Social Media</h4>
+            <p>Nesque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit, sed quia non
+              numquam eius modi tempora incidunt.</p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="service-item text-center">
+            <div class=" mb-3 d-flex justify-content-center align-items-center ">
+              <div class=" bg-info rounded-circle " style="height: 70px; width: 70px; display: flex; justify-content: center; align-items: center;" >
+                <i class="fas fa-shopping-cart fa-3x fa-3x text-white "></i>
+              </div>
+            </div>  
+            <h4>Ecommerce</h4>
+            <p>Nesque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci velit, sed quia non
+              numquam eius modi tempora incidunt.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SERVICES section end -->
+
+    <div class="fall-in-love-section mb-">
+      <div class="fall-in-love-content">
+          FALLEN IN <span class="heart"><i class="fa-regular fa-heart"></i></span> WITH OSHINE ?
+      </div>
+  </div>
+ 
+<div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 ">
+            <img src="http://oshine.wpengine.com/v14/wp-content/uploads/sites/16/2014/11/oshin-demo-v1.png" class="img-fluid " alt="Stylish">
+          </div>
+          <div class="col-md-6" style=" margin-top: 100px;">
+            <h1 class="text-strat fw-bold mx-5">WHY OSHINE ?</h1>
+            <p class="fs-3  mx-5" style="font-size:18px; line-height:34px; ">High Quality Design. Super Slick Performance. Unique Layouts and a proven track record of successful themes and customer support sets us apart from the rest.</p>
+            
+            <!-- Page Builder Section -->
+            <div class="" style="margin-right:200px;">
+                <div class=" d-flex justify-content-between mt-5">
+                    <div class="w-25  d-flex  justify-content-end rounded-circle mt-1 mx-4">
+                        <div class="bg-light rounded-circle d-flex justify-content-center align-items-center" style="height:70px; width: 70px;">
+                            <i class="fa-brands fa-react fa-3x  text-info"></i>
+                        </div>
+                    </div>
+                    <div class="card-body" style="width: 600px;">
+                    <h5 class="card-title">PAGE BUILDER</h5>
+                    <p class="card-text fw-light " style="font-size: 13PX;">Oshine comes with our powerful custom drag & drop page builder. With visual previews in the backend and with unique features like copy & paste, you will fall in love with this super fast builder.</p>
+                  </div>
+                </div>
+                <div class=" d-flex justify-content-between mt-3">
+                    <div class="w-25  d-flex  justify-content-end rounded-circle mt-1 mx-4">
+                        <div class="bg-light rounded-circle d-flex justify-content-center align-items-center" style="height:70px; width: 70px;">
+                            <i class="fa-brands fa-react fa-3x  text-info"></i>
+                        </div>
+                    </div>
+                    <div class="card-body" style="width: 600px;">
+                    <h5 class="card-title">PAGE BUILDER</h5>
+                    <p class="card-text fw-light " style="font-size: 13PX;">Oshine comes with our powerful custom drag & drop page builder. With visual previews in the backend and with unique features like copy & paste, you will fall in love with this super fast builder.</p>
+                  </div>
+                </div>
+                <div class=" d-flex justify-content-between mt-3">
+                    <div class="w-25  d-flex  justify-content-end rounded-circle mt-1 mx-4">
+                        <div class="bg-light rounded-circle d-flex justify-content-center align-items-center" style="height:70px; width: 70px;">
+                            <i class="fa-brands fa-react fa-3x  text-info"></i>
+                        </div>
+                    </div>
+                    <div class="card-body" style="width: 600px;">
+                    <h5 class="card-title">PAGE BUILDER</h5>
+                    <p class="card-text fw-light " style="font-size: 13PX;">Oshine comes with our powerful custom drag & drop page builder. With visual previews in the backend and with unique features like copy & paste, you will fall in love with this super fast builder.</p>
+                  </div>
+            </div>
+            </div>
+          
+          </div>
+        </div>
+
+
+
+
+
+<section class="bg-light">
+  <div class="container-fluid bg-light px-5 position-relative text-center mt-5">
+    <h2 class="text-center  ">OUR WORK</h2>
+    <div class="position-relative d-inline-block mb-5">
+      <p class="text-center mb-0 we-content d-inline-block fst-italic">Recent Projects we have completed</p>
+      <span class="ab-content "></span>
+    </div>
+    
+    <div class="row row-cols-1 row-cols-md-4 g-5">
+      <div class="col">
+        <div class="card border-0 rounded-0 bg-light">
+          <img src="https://oshinewptheme.com/v14/wp-content/uploads/sites/16/2013/11/s3-650x385.jpg" class="card-img-top rounded-0" alt="Print Media">
+          <div class="card-body">
+            <h5 class="card-title">Print Media</h5>
+            <p class="card-text">Classic Design</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0 bg-light">
+          <img src="https://oshinewptheme.com/v14/wp-content/uploads/sites/16/2013/10/iona-sam-2-650x385.jpg" class="card-img-top rounded-0" alt="Magazine Design">
+          <div class="card-body">
+            <h5 class="card-title">Magazine Design</h5>
+            <p class="card-text">Classic Design</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0 bg-light">
+          <img src="https://oshinewptheme.com/v14/wp-content/uploads/sites/16/2014/11/oshin-model-0009-650x385.jpg" class="card-img-top rounded-0" alt="Vertical Slider">
+          <div class="card-body">
+            <h5 class="card-title">Vertical Slider</h5>
+            <p class="card-text">Classic Design</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0 bg-light">
+          <img src="https://oshinewptheme.com/v14/wp-content/uploads/sites/16/2013/11/vinyl-mock-650x385.jpg" class="card-img-top rounded-0" alt="Product Mockup">
+          <div class="card-body">
+            <h5 class="card-title">Product Mockup</h5>
+            <p class="card-text">Classic Design</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0 bg-light">
+          <img src="https://oshinewptheme.com/v14/wp-content/uploads/sites/16/2013/12/responsive-road-650x385.jpg" class="card-img-top rounded-0" alt="Product Mockup">
+          <div class="card-body">
+            <h5 class="card-title">Headphones</h5>
+            <p class="card-text">Classic Design.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0 bg-light">
+          <img src="https://oshinewptheme.com/v14/wp-content/uploads/sites/16/2014/04/oshin-model-0014-650x385.jpg" class="card-img-top rounded-0" alt="Product Mockup">
+          <div class="card-body">
+            <h5 class="card-title">lightbox gallery</h5>
+            <p class="card-text">Classic Design.lightbox</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0 bg-light">
+          <img src="https://oshinewptheme.com/v14/wp-content/uploads/sites/16/2013/12/road-product-650x385.jpg" class="card-img-top rounded-0" alt="Product Mockup">
+          <div class="card-body">
+            <h5 class="card-title">Left Fexed Sidebar</h5>
+            <p class="card-text">Classic.slder.videos.Web</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0 bg-light">
+          <img src="https://oshinewptheme.com/v14/wp-content/uploads/sites/16/2013/11/s3-650x385.jpg" class="card-img-top rounded-0" alt="Product Mockup">
+          <div class="card-body">
+            <h5 class="card-title">Left Floting sidebar</h5>
+            <p class="card-text">Classic.photoraphy.videos</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0 bg-light">
+          <img src="https://oshinewptheme.com/v14/wp-content/uploads/sites/16/2013/11/Vinyl-Record-PSD-full-650x385.jpg" class="card-img-top rounded-0" alt="Product Mockup">
+          <div class="card-body">
+            <h5 class="card-title">sidebarslider</h5>
+            <p class="card-text">brochers.photography</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0 bg-light">
+          <img src="https://oshinewptheme.com/v14/wp-content/uploads/sites/16/2013/11/poster-frame-650x385.jpg" class="card-img-top rounded-0" alt="Product Mockup">
+          <div class="card-body">
+            <h5 class="card-title">lightbox image</h5>
+            <p class="card-text">brochers.Classic.photoraphy.videos</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0 bg-light">
+          <img src="https://oshinewptheme.com/v14/wp-content/uploads/sites/16/2013/11/wanderlust07-650x385.jpg" class="card-img-top rounded-0" alt="Product Mockup">
+          <div class="card-body">
+            <h5 class="card-title">page bulder</h5>
+            <p class="card-text">brochers.videos</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0 bg-light">
+          <img src="https://oshinewptheme.com/v14/wp-content/uploads/sites/16/2013/11/oshin-model-0011-650x385.jpg" class="card-img-top rounded-0" alt="Product Mockup">
+          <div class="card-body">
+            <h5 class="card-title">full screen slider</h5>
+            <p class="card-text">mobail.slider</p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more cards for the remaining images -->
+    </div>
+  </div>
+</section>
+ 
+  <div class="container text-center my-5">
+    <div class="container text-center position-relative">
+      <h2 class="text-center mb-3">Our Clients</h2>
+      <div class="position-relative d-inline-block mb-5">
+        <p class="text-center mb-0 we-content d-inline-block fst-italic">Some of the top brands across the globe</p>
+        <span class="ab-content"></span>
+      </div>
+    <!-- <h2>Our Clients</h2>
+    <p class="text-muted">Some of the top brands across the globe</p> -->
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="client-logo">
+                <img src="http://oshine.wpengine.com/wp-content/uploads/2014/10/oshin-main-flow.jpg" alt="VUI">
+            </div>
+        </div>
+        <div class="col">
+            <div class="client-logo">
+                <img src="http://oshine.wpengine.com/wp-content/uploads/2014/10/Marks_2048x1536_144dpi_12_1000.jpg" alt="PULP">
+            </div>
+        </div>
+        <div class="col">
+            <div class="client-logo">
+                <img src="http://oshine.wpengine.com/wp-content/uploads/2014/10/Marks_2048x1536_144dpi_11_1000.jpg" alt="Vantage">
+            </div>
+        </div>
+        <div class="col">
+            <div class="client-logo">
+                <img src="http://oshine.wpengine.com/wp-content/uploads/2014/10/Marks_2048x1536_144dpi_9_1000.jpg" alt="Hexagon">
+            </div>
+        </div>
+        <div class="col">
+            <div class="client-logo">
+                <img src="http://oshine.wpengine.com/wp-content/uploads/2014/10/Marks_2048x1536_144dpi_7_1000.jpg" alt="Client 1">
+            </div>
+        </div>
+        <div class="col">
+            <div class="client-logo">
+                <img src="http://oshine.wpengine.com/wp-content/uploads/2014/10/Marks_2048x1536_144dpi_7_1000.jpg" alt="S.C.P.">
+            </div>
+        </div>
+        <div class="col">
+            <div class="client-logo">
+                <img src="http://oshine.wpengine.com/wp-content/uploads/2014/10/Marks_2048x1536_144dpi_6_1000.jpg" alt="Client 2">
+            </div>
+        </div>
+        <div class="col">
+            <div class="client-logo">
+                <img src="http://oshine.wpengine.com/wp-content/uploads/2014/10/Marks_2048x1536_144dpi_2_1000.jpg" alt="Eleven Everything London">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <section class="container bg-dark" style="width: 100%;">
+      <div class="container bg-dark text-white py-5 " >
+        <div class="row">
+          <div class="col-md-6 ">
+            <h2 class="mb-5 ">OSHINE</h2>
+            <div class="mt-4 ">
+              <p class="lh-1">Ea mei nostrum imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem vim.</p>
+              <p>66 Nicholson Street, Buffalo, NY 14214</p>
+               <a href="mailto:swami@brandexponents.com"><i class="fa fa-envelope text-white mx-2"></i> swami@brandexponents.com</a>
+              <!-- <i class="fa-regular fa-envelope"></i><a href="" class="mx-3">swann@abandvoneerts.com</a> -->
+            </div>
+            <div class="mt-4">
+              <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-2x text-info "></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-2x text-info"></i></a>
+              <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-2x text-info"></i></a>
+              <a href="#" class="text-white"><i class="fab fa-pinterest fa-2x text-info"></i></a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h2 class="mb-4">REACH OUT TO US</h2>
+            <p class="mb-4">We love to listen and we are eagerly waiting to talk to you regarding your project. Get in touch with us if you have any queries and we will get back to you as soon as possible.</p>
+            <form class="">
+              <div class="mb-3">
+                <input type="text" class="form-control bg-dark text-white " placeholder="Name">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control  bg-dark text-white" placeholder="Email">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control  bg-dark text-white" placeholder="Subject">
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control  bg-dark text-white" rows="5" placeholder="Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-info">SUBMIT</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

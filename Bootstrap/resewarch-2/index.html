@@ -1,137 +1,141 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <style>
-      /* Additional styling to make the map full width and height */
-      #map {
-        height: 100vh;
-        width: 100%;
-      }
-    </style>
-  <link rel="stylesheet" href="Style.css">
-</head>
-
-<body>
-  
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <div id="map"></div>
-      </div>
-    </div>
-  </div>
-  
- Bootstrap JS and dependencies 
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
-  Google Maps API 
-  
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-  <script>
-    function initMap() {
-      var mapOptions = {
-        center: new google.maps.LatLng(42.9634, -78.8716), // Center map on Buffalo, NY
-        zoom: 12,
-      };
-      var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-    }
-  </script>
-  
-  
-  
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html> -->
-
-
-
-<!--<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Google Map Section</title>
-   Bootstrap CSS 
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    /* Additional styling to make the map full width and height */
-    #map {
-      height: 100vh;
-      width: 100%;
-    }
-  </style>
-</head>
-<body>
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-12">
-      <div id="map"></div>
-    </div>
-  </div>
-</div>
-
-Bootstrap JS and dependencies 
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-
-Google Maps API 
-
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-<script>
-  function initMap() {
-    var mapOptions = {
-      center: new google.maps.LatLng(42.9634, -78.8716), // Center map on Buffalo, NY
-      zoom: 12,
-    };
-    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
-  }
-</script>
-
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>#map {
-    height: 500px;
-  }</style>
+  <title>research-2</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div id="map" class="embed-responsive embed-responsive-16by9"></div>
+  <div style="background-color: #000; color: #fff; padding: 30px;">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div>
+        <p>Ea mei nostrum imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem vim</p>
+        <p>
+          <i class="fa fa-map-marker"></i> 66 Nicholson Street, Buffalo, NY 14214<br>
+          <i class="fa fa-phone"></i> 001-123-456-7890<br>
+          <i class="fa fa-envelope"></i> <a href="mailto:swami@brandexponents.com" style="color: #fff;">swami@brandexponents.com</a>
+        </p>
+        <div>
+          <span>FOLLOW US</span>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+      <div>
+        <h2>REACH OUT TO US</h2>
+        <p>We love to listen and we are eagerly waiting to talk to you regarding your project. Get in touch with us if you have any queries and we will get back to you as soon as possible.</p>
+        <form>
+          <input type="text" placeholder="Name" style="width: 100%; padding: 5px; margin-bottom: 10px;"><br>
+          <input type="email" placeholder="Email" style="width: 100%; padding: 5px; margin-bottom: 10px;"><br>
+          <input type="text" placeholder="Subject" style="width: 100%; padding: 5px; margin-bottom: 10px;"><br>
+          <textarea placeholder="Message" style="width: 100%; padding: 5px; margin-bottom: 10px;"></textarea><br>
+          <button style="background-color: #00b0f0; color: #fff; padding: 10px 20px; border: none; cursor: pointer;">SUBMIT</button>
+        </form>
       </div>
     </div>
   </div>
-  <script>function initMap() {
-    const mapOptions = {
-      zoom: 12,
-      center: { lat: 42.9869, lng: -78.7495 }, // Coordinates for the University Heights area
-    };
-  
-    const map = new google.maps.Map(document.getElementById('map'), mapOptions);
-  
-    // Add any additional map functionality here, like markers, info windows, etc.
-  }</script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-</body>
+ <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script> 
+<body>
 </html>
+<!-- <div class="container-fluid" style="background-color: #000; color: #fff; padding: 30px;">
+  <div class=" container row ">
+    <div class="col-md-6">
+      <p>Ea mei nostrum imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem vim</p>
+      <address>
+        <strong>Brand Exponents</strong><br>
+        66 Nicholson Street, Buffalo, NY 14214<br>
+        <i class="fa fa-phone"></i> 001-123-456-7890<br>
+        <a href="mailto:swami@brandexponents.com"><i class="fa fa-envelope"></i> swami@brandexponents.com</a>
+      </address>
+      <div class="follow-us">
+        <strong>FOLLOW US</strong>
+        <a href="#" class="btn btn-social-icon btn-twitter">
+          <span class="fa fa-twitter"></span>
+        </a>
+        <a href="#" class="btn btn-social-icon btn-facebook">
+          <span class="fa fa-facebook"></span>
+        </a>
+        <a href="#" class="btn btn-social-icon btn-google-plus">
+          <span class="fa fa-google-plus"></span>
+        </a>
+        <a href="#" class="btn btn-social-icon btn-instagram">
+          <span class="fa fa-instagram"></span>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h2>REACH OUT TO US</h2>
+      <p>We love to listen and we are eagerly waiting to talk to you regarding your project. Get in touch with us if you have any queries and we will get back to you as soon as possible.</p>
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" id="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="subject" placeholder="Subject">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <p>Ea mei nostrum imperdiet deterruisset, mei ludus efficiendi ei. Sea summo mazim ex, ea errem eleifend definitionem vim</p>
+      <address>
+        <strong>Brand Exponents</strong><br>
+        66 Nicholson Street, Buffalo, NY 14214<br>
+        <abbr title="Phone">P:</abbr> 001-123-456-7890<br>
+        <a href="mailto:swami@brandexponents.com">swami@brandexponents.com</a>
+      </address>
+      <div class="follow-us">
+        <strong>FOLLOW US</strong>
+        <a href="#" class="btn btn-social-icon btn-twitter">
+          <span class="fa fa-twitter"></span>
+        </a>
+        <a href="#" class="btn btn-social-icon btn-facebook">
+          <span class="fa fa-facebook"></span>
+        </a>
+        <a href="#" class="btn btn-social-icon btn-google-plus">
+          <span class="fa fa-google-plus"></span>
+        </a>
+        <a href="#" class="btn btn-social-icon btn-instagram">
+          <span class="fa fa-instagram"></span>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h2>REACH OUT TO US</h2>
+      <p>We love to listen and we are eagerly waiting to talk to you regarding your project. Get in touch with us if you have any queries and we will get back to you as soon as possible.</p>
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" id="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" id="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="subject" placeholder="Subject">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">SUBMIT</button>
+      </form>
+    </div>
+  </div>
+</div> -->
