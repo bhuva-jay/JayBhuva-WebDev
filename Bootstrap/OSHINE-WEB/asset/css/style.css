@@ -27,6 +27,27 @@
     background-color: black;
     color: white;
 }
+.button_slide {
+    color:#000000;
+    height: 50px;
+    width: 200px;
+    border: 2px solid #000000;
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 aqua ;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+  }
+  
+  .slide_down:hover {
+    box-shadow: inset 0 100px 0 0 aqua;
+  }
 
 .card-i {
     overflow: hidden;
@@ -45,6 +66,58 @@
 
 .card-i img {
     filter: grayscale(100%);
+}
+
+
+.card-image {
+    position: relative;
+    overflow: hidden;
+}
+.card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.overlay {
+    position: absolute;
+    bottom: 10px;
+    height: 50px;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(60px);
+    background-color: black;
+}
+.card-image:hover .overlay {
+    transform: translateY(0px);
+}
+.card-image:hover .overlay {
+    opacity: 1;
+}
+.port-link {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.port-link span {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    justify-content:center;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+.port-link span i {
+    color: white;
+    font-size: 20px;
+}
+.port-link span:hover {
+    /* background: rgb(8, 4, 4); */
+    transform: translateY(10px);
 }
 .we-content{
     position: relative;
@@ -74,14 +147,22 @@
     top:50%;
 
 }
+@media (max-width:320px) {
+    .ab-content{
+       height: 1px;
+       width: 45px !important;;
+    }
+}
 
-
-
-.bg-info:hover{
+.bg-inffo{
+    background-color:#00ffff ;
+    color: rgb(109, 105, 105);
+}
+.bg-inffo:hover{
     background-color: white!important;
 }
 
-.bg-info:hover i{
+.bg-inffo:hover i{
     color:#00ffff!important;
 }
 
@@ -91,7 +172,8 @@
     background: url('https://oshine.wpengine.com/v14/wp-content/uploads/sites/16/2014/11/oshin-splash-main.jpg') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
-    height: 400px; width: auto;
+    height: 400px; 
+   width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +201,7 @@
 .fall-in-love-content .heart {
     color: #00ADEF;
     font-size: 60px;
-    line-height:63px;
+    line-height:63px; 
 }
 
 .client-logo {
@@ -134,8 +216,137 @@
 }
 
 input::placeholder {
-    color: white !important;
-}
+    color: #999999 !important;
+}   
 textarea::placeholder {
-    color: #fff !important;  
+    color:#999999 !important;  
   }
+
+
+  /* .card {
+    margin: auto;
+    
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .card-subtitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  .card-subtitle sub {
+    font-size: 1rem;
+    top: -1em;
+  } */
+
+  .footer_icon {
+    background: #14d2e7;
+    padding: 10px;
+    border-radius: 100px;
+    font-size: 24px;
+}
+
+.top{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 4.1rem;
+ }
+ .last-text p{
+   width: 100%;
+   text-align: center;
+   padding: 25px 0;
+   background:#000;
+   font-weight: 300;
+   margin-top: 70px;
+   color: white;
+}
+.last-text {
+height: 10px;
+}
+
+
+ .top i{
+    color: #000;
+    background:#2293d7;
+    font-size: 20px;
+    padding: 10px;
+   
+ }
+ /* SLIDER SECTION */
+ .carousel-outside {
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carouselE{
+    max-width: 50%;
+    
+}
+
+.photo{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+     
+}
+
+
+.black-layer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #000000cc;
+}
+
+.testimonial {
+    background: url('https://oshine.wpengine.com/v14/wp-content/uploads/sites/16/2014/11/agency-corp-0004-comp.jpg')repeat-y;
+    animation: infiniteScrollBg 50s linear infinite;
+    background-size: cover;
+    position: relative;
+
+    color: white;
+    padding: 50px 0;
+}
+
+@keyframes infiniteScrollBg {
+    0% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.round-button{
+    height: 5px !important;
+    width: 5px !important;
+    border-radius: 100%;
+}
+.carde{
+    max-width: 300px;
+}
+
+/* .row_center{
+    
+} */
+ 
+/* @media (max-width:540px) {
+    .row_center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+} */
+
+.carousel-item-inneor{
+max-height:100% ;
+}
+
