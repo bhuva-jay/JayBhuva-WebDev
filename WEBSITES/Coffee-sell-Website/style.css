@@ -11,10 +11,10 @@
 /* Defining Custome Variables */
 :root {
     /* Colors */
-    --primary-color: #3b141c;
-    --secondary-color: #f3961c;
-    --dark-color: #252525;
-    --white-color: #fff;
+    --primary-color:#d7e5fa;
+    --secondary-color:	#ba9750;
+    --dark-color: #323950;
+    /* --white-color: black; */
     --light-gray-color: #f2f2f2;
 
     /* Site Max-Width */
@@ -25,8 +25,8 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: var(--white-color);
+body{
+    background-color: white;
 }
 
 /* Setting for the whole website */
@@ -40,7 +40,7 @@ ul {
 
 .section_container {
     margin: 0 auto;
-    max-width: var(--site-max-width);
+    max-width: 1300px;
 }
 
 .section_title {
@@ -54,7 +54,7 @@ ul {
 .section_title::after {
     content: '';
     width: 80px;
-    background: var(--secondary-color);
+    background:#ba9750;
     height: 5px;
     display: block;
     margin: 7px auto 0;
@@ -67,7 +67,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1;
-    background: var(--primary-color);
+    background:#d7e5fa;
 }
 
 nav {
@@ -76,21 +76,21 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    max-width: var(--site-max-width);
+    max-width:1300px;
 }
 
-nav .nav_logo a {
+nav .navlogo a {
     display: flex;
     gap: 15px;
     align-items: center;
 }
 
-nav .nav_logo a img {
+nav .navlogo a img {
     max-width: 55px;
 }
 
-nav .nav_logo h2 {
-    color: var(--white-color);
+nav .navlogo h2 {
+    color:#ba9750 ;
     font-weight: 600;
     font-size: 32px;
 }
@@ -105,19 +105,19 @@ nav ul li a {
     padding: 10px 25px;
     font-size: 18px;
     font-weight: 500;
-    color: var(--white-color);
+    color: rgb(155, 150, 150);
     border-radius: 30px;
     transition: all 0.2s ease;
 }
 
 nav ul li a:hover {
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
+    color:#323950;
+    background-color:#ba9750;
 }
 
 nav label {
     font-size: 32px;
-    color: var(--white-color);
+    color: white;
     cursor: pointer;
 }
 
@@ -133,7 +133,7 @@ label .close_btn {
 /* Hero Section */
 .hero_section {
     min-height: 100vh;
-    background: var(--primary-color);
+    background:#d7e5fa;
 }
 
 .hero_container {
@@ -148,20 +148,20 @@ label .close_btn {
 
 .hero_container .text_section h2 {
     font-size: 40px;
-    color: var(--secondary-color);
+    color:#323950;
 }
 
 .hero_container .text_section h3 {
     font-size: 35px;
     font-weight: 600;
-    color: var(--white-color);
+    color:#ba9750;
     margin-top: 8px;
 }
 
 .hero_container .text_section p {
     font-size: 20px;
     font-weight: 400;
-    color: var(--white-color);
+    color:#ba9750;
     margin: 24px 0 40px;
     max-width: 70%;
 }
@@ -177,29 +177,29 @@ label .close_btn {
     outline: none;
     cursor: pointer;
     border-radius: 50px;
-    background: var(--secondary-color);
-    color: var(--primary-color);
+    background:#ba9750;
+    color:#d7e5fa;
     font-size: 18px;
     font-weight: 600;
     transition: all 0.4s ease;
 }
 
 .hero_container .hero_section_button .button:last-child {
-    color: var(--white-color);
-    border-color: var(--white-color);
+    color: white;
+    border-color: white;
     background: none;
 }
 
 .hero_container .hero_section_button .button:first-child:hover {
-    color: var(--white-color);
+    color:#323950;
     background: transparent;
-    border-color: var(--white-color);
+    border-color: white;
 }
 
 .hero_container .hero_section_button .button:last-child:hover {
-    color: var(--primary-color);
-    background: var(--secondary-color);
-    border-color: var(--secondary-color);
+    color:#d7e5fa;
+    background:#ba9750;
+    border-color:#ba9750;
 }
 
 .hero_container .image_section {
@@ -213,7 +213,7 @@ label .close_btn {
 /* About Us Section */
 .about_us {
     padding: 60px 20px 120px;
-    background: var(--light-gray-color);
+    background:#f2f2f2;
 }
 
 .about_container {
@@ -245,8 +245,8 @@ label .close_btn {
 
 /* Services Section */
 .services {
-    background: var(--dark-color);
-    color: var(--white-color);
+    background:	#323949 ;
+    color: white;
     padding: 60px 20px 120px;
 }
 
@@ -278,11 +278,15 @@ label .close_btn {
 
 .services_items .services_text p {
     font-size: 17px;
+
+}
+.services_text p{
+    color: #ba9750;
 }
 
 /* Why Us Section */
 .why_us {
-    background: var(--light-gray-color);
+    background:#f2f2f2;
     padding: 60px 20px 120px;
 }
 
@@ -319,11 +323,12 @@ label .close_btn {
 
 .why_items .why_us_text p {
     font-size: 17px;
+    color:#ba9750;
 }
 
 /* Gallery Section */
 .gallery {
-    background: var(--white-color);
+    background:#d7e5fa;
     padding: 60px 20px 100px;
 }
 
@@ -353,8 +358,9 @@ label .close_btn {
 
 /* Contact Section */
 .contact {
-    background: var(--light-gray-color);
+    background:#323949 ;
     padding: 60px 20px 100px;
+    color: white;
 }
 
 .contact_container {
@@ -388,6 +394,13 @@ label .close_btn {
     border-radius: 6px;
     border: 1px solid #ccc;
 }
+.field input::placeholder{
+    color:#93bbf7 ;  
+  
+   }
+   .field textarea::placeholder{
+    color:#93bbf7;
+   }
 
 .contact_container .contact_form textarea {
     width: 100%;
@@ -405,17 +418,17 @@ label .close_btn {
     outline: none;
     cursor: pointer;
     border-radius: 50px;
-    background: var(--primary-color);
-    color: var(--white-color);
+    background:#d7e5fa;
+    color:black;
     font-size: 17px;
     font-weight: 600;
     transition: all 0.4s ease;
 }
 
 .contact_container .contact_form .button:hover {
-    color: var(--primary-color);
+    color: white;
     background: transparent;
-    border-color: var(--primary-color);
+    border-color:#d7e5fa;
 }
 
 .contact_text .contact_items {
@@ -431,8 +444,8 @@ label .close_btn {
 
 /* Footer Section */
 footer {
-    background: #1b1b1b;
-    color: var(--white-color);
+    background: #ffffff;
+    color:#323950;
     padding: 60px 20px;
 }
 
@@ -451,7 +464,7 @@ footer {
     display: flex;
     gap: 15px;
     align-items: center;
-    color: var(--white-color);
+    color: white;
 }
 
 .footer_section .footer_logo a img {
@@ -496,10 +509,22 @@ footer {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+.footer_logo h2{
+    color:#323950;
+}
 
 .footer_section .follow_us i:hover {
-    color: var(--secondary-color);
+    color:#323950;
 }
+ .useful_links ul li{
+    color:#ba9750;
+}
+ .contact_us ul{
+    color: #ba9750;
+ }
+  .follow_us i{
+    color: #ba9750;
+  }
 
 
 /* Responsive Media Query code for max-width: 1024px */
@@ -515,7 +540,7 @@ footer {
 
     nav ul {
         display: block;
-        background: var(--white-color);
+        background: white;
         position: absolute;
         top: 75px;
         left: -100%;
@@ -620,6 +645,7 @@ footer {
     .contact_container .contact_form {
         max-width: 100%;
     }
+  
 
     .footer_section {
         flex-direction: column;
