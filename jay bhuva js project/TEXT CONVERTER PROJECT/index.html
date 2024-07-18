@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TEXT CONVERTOR</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(152, 150, 179);
+        }
+
+        .main_body {
+            margin-top: 80px;
+        }
+
+        button {
+            height: 40px;
+            font-size: 13px;
+            font-weight: 600;
+            color: white;
+            background-color: black;
+            border-radius: 5px;
+            padding: 10px;
+
+        }
+
+        button:hover {
+            background-color: aquamarine;
+            color: black;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 30px;
+            font-weight: bold;
+            word-spacing: 15px;
+            font-style: italic;
+            color: radial-gradient(white, green);
+            background:
+                linear-gradient(45deg, #92baac 45px, transparent 45px)64px 64px,
+                linear-gradient(45deg, #92baac 45px, transparent 45px, transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),
+                linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px, #92baac 68px, #92baac 113px, transparent 113px, transparent 158px, #92baac 158px);
+            background-color: #e1ebbd;
+            background-size: 128px 128px;
+        }
+
+        .button_body {
+            margin-top: 20px;
+            height: 60px;
+            display: flex;
+            justify-content: space-around;
+            background-color: cornflowerblue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_body">
+        <h1>Enter the text to analyze below</h1>
+        <!-- <input type="text" name="" id="mytextarea" value=""oneclick="myFunction()"/> -->
+        <textarea name="" id="mytextarea" onclick="myFunction()" cols="100" rows="10"
+            placeholder="ENTER THE TEXT"></textarea>
+        <div class="button_body">
+            <button onclick="myFunction()">UPERCASE</button>
+            <button onclick="mylowercase()">lowercase</button>
+            <button onclick="clear()" id="clearButton">clear all</button>
+            <button onclick="copy()">Copy to clipbord</button>
+            <button onclick="space()">clear space</button>
+            <button onclick="reversew()">reverse word</button>
+            <button onclick="reverses()" type="reset">reverse sentence</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        function myFunction() {
+            let x = document.getElementById('mytextarea').value;
+            let u = x.toUpperCase();
+            console.log(u);
+            document.getElementById('mytextarea').value = u
+        }
+
+
+        function mylowercase() {
+            let orignal = document.getElementById('mytextarea').value
+            //    console.log(orignal);
+            let lowercase = orignal.toLowerCase();
+            console.log(lowercase);
+            document.getElementById('mytextarea').value = lowercase
+
+        }
+
+// clear()
+        const textarea = document.getElementById('mytextarea');
+    const clearButton = document.getElementById('clearButton');
+    
+    clearButton.addEventListener('click', () => {
+      textarea.value = '';
+    });
+       
+
+        function copy() {
+            var copyText = document.getElementById("mytextarea");
+            copyText.select();
+            // copyText.setSelectionRange(0, 99999); 
+            navigator.clipboard.writeText(copyText.value);
+
+            console.log(copyText.value);
+            // alert("Copied the text: " + copyText.value);
+            
+        }
+
+        function space() {
+            let orignal = document.getElementById('mytextarea').value
+            // console.log(orignal);
+            let space = orignal.split(' ').join('');
+            console.log(space);
+            document.getElementById('mytextarea').value = space
+
+
+        }
+        function reversew() {
+            let orignal = document.getElementById('mytextarea').value
+            // console.log(orignal);
+            let reversew = orignal.split('').reverse().join('');
+            console.log(reversew);
+            document.getElementById('mytextarea').value = reversew
+
+
+        }
+        function reverses() {
+            let orignal = document.getElementById('mytextarea').value
+            // console.log(orignal);
+            let reverses = orignal.split("").reverse().join("");
+            console.log(reverses);
+            document.getElementById('mytextarea').value = reverses
+
+
+        }
+
+
+     
+
+
+
+    
+    </script>
+</body>
+
+</html>
