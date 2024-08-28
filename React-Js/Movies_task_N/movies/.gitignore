@@ -1,0 +1,105 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Search from './Search';
+import Deshbord from './Deshbord';
+
+ export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Search />} />
+        <Route path="/Deshbord" element={<Deshbord />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+ this is app componets
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+export default function Search() {
+  const [moviename, setMoviename] = useState('');
+  const [movieimg, setMovieimg] = useState('');
+  const [moviediscrip, setMovidiscrip] = useState('');
+  const [moviedata, setMoviedata] = useState([]);
+
+  useEffect(() => {
+    axios.get("https://66bef3c142533c4031448d26.mockapi.io/moviesname")
+      .then(response => {
+        setMoviedata(response.data);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  }, []);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData();
+    formData.append('moviename', moviename);
+    formData.append('movieimg', movieimg);
+    formData.append('moviediscrip', moviediscrip);
+
+    axios.post("https://66bef3c142533c4031448d26.mockapi.io/moviesname", formData)
+      .then(response => {
+        setMoviedata([...moviedata, response.data]);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>Movie Name:</label>
+      <input type="text" name="moviename" value={moviename} onChange={(e) => setMoviename(e.target.value)} />
+      <br />
+      <label>Movie img Link:</label>
+      <input type="file" name="movieimg" value={movieimg} onChange={(e) => setMovieimg(e.target.value)} />
+      <br />
+      <label>Movie Discription</label>
+      <input type="text" name="moviedisc" value={moviediscrip} onChange={(e) => setMovidiscrip(e.target.value)} />
+      <br />
+      <button type="submit">ADD</button>
+    </form>
+  );
+}this is my search componets
+import React from 'react'
+
+export default function Deshbord({ moviedata }) {
+  return (
+    <div>
+    <h1>Movie Dashboard</h1>
+    <ul>
+      {moviedata.map((movie, index) => (
+        <li key={index}>
+          <h2>{movie.moviename}</h2>
+          <img src={movie.movieimg} alt={movie.moviename} />
+          <p>{movie.moviediscrip}</p>
+        </li>
+      ))}
+    </ul>
+  </div>
+  )this my deshbordcomponets
