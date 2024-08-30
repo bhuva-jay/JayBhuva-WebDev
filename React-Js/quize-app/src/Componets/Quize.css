@@ -1,0 +1,71 @@
+.App {
+    text-align: start;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f4f4f4;
+  }
+  
+  /* li:hover {
+    background-color: #ddd;
+  } */
+  
+  .selected {
+    background-color: #0bef5e;
+  }
+  
+  .button{
+    background-color: #0dbc72;
+    border-radius: 20px;
+    width: 50%;
+    height: 60px;
+    font-size: large;
+    cursor: pointer;
+  }
+  .button-disable{
+    border-radius: 20px;
+    width: 50%;
+    font-size: large;
+    height: 60px;
+    cursor: not-allowed;
+  }
+
+  /* quizePAGE css start */
+  .quiz-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 500px;
+    background-color: white;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .start-button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+   /* quizePAGE css end */
