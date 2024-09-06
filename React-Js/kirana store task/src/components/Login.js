@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import { useNavigate } from 'react-router-dom';
 
 const validationSchema = Yup.object({
   email: Yup.string().email("Invalid email").required("Email is required"),
@@ -12,8 +12,8 @@ const validationSchema = Yup.object({
 
 const LoginPage = () => {
   const [users, setUsers] = useState([]);
-  const [isRegistered, setIsRegistered] = useState(true); // Add a state to track if the user is registered
-  
+  const [isRegistered, setIsRegistered] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const storedUsers = JSON.parse(localStorage.getItem('users'));
@@ -31,62 +31,67 @@ const LoginPage = () => {
     onSubmit: (values) => {
       const user = users.find((user) => user.email === values.email && user.password === values.password);
       if (user) {
-        alert('Login successful!');
-        window.location.href = '/';
-        toast.success("Login successful!")
+        toast.success("Login successful!");
+        localStorage.setItem('userRole', user.role); // Store user's role in local storage
+        localStorage.setItem('isLoggedIn', true); // Store a flag to indicate the user is logged in
+        if (user.role === 'admin') {
+          navigate('/admin');
+        } else if (user.role === 'seller') {
+          navigate('/Selsmen');
+        } else if (user.role === 'buyer') {
+          navigate('/Buyer');
+        }
       } else {
-        setIsRegistered(false); // Set isRegistered to false if the user is not found
+        setIsRegistered(false);
       }
     }
   });
 
-  const inputFields = [
-    { label: "Email", name: "email" },
-    { label: "Password", name: "password", type: "password" },
-  ];
-
   return (
-    <div>
-      <ToastContainer/>
-      <h1 className="text-green-500 text-center text-3xl mb-4">Login</h1>
-      <div className="max-w-md mx-auto p-4 border border-gray-300 rounded-md shadow-md">
-        <form onSubmit={formik.handleSubmit}>
-          {inputFields.map((field, index) => (
-            <div key={index} className="mb-4">
-              <label htmlFor={field.name} className="block text-gray-700 text-sm font-bold mb-2">{field.label}</label>
-              <input
-                type={field.type || "text"}
-                id={field.name}
-                name={field.name}
-                onChange={formik.handleChange}
-                value={formik.values[field.name]}
-                className="w-full p-2 pl-10 text-sm text-gray-700 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-blue-500"
-              />
-              {formik.touched[field.name] && formik.errors[field.name] ? (
-                <div className="text-red-500 text-sm mt-2 flex items-center">
-                  <span className="text-lg">*</span>
-                  <span className="ml-2">{formik.errors[field.name]}</span>
-                </div>
-              ) : null}
-            </div>
-          ))}
-          <div className="mb-4">
-            <button   type="submit" className="bg-green-500 hover:bg-orange-500 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline">
-              Login
-            </button>
-          </div>
-          {!isRegistered && (
-            <div className="text-red-500 text-sm mt-2 flex items-center">
-              <span className="text-lg">*</span>
-              <span className="ml-2">You are not registered. Please register first.</span>
-              
-            </div>
-          )}
+    <div className="h-screen flex justify-center items-center bg-gray-100">
+      <div className="max-w-md w-full p-4 bg-white rounded shadow-md">
+        <h1 className="text-3xl font-bold mb-4">Login Page</h1>
+        <form onSubmit={formik.handleSubmit} className="space-y-4">
+          <label className="block mb-2" htmlFor="email">Email:</label>
+          <input
+            type="email"
+            {...formik.getFieldProps('email')}
+            className="w-full p-2 pl-10 text-sm text-gray-700"
+            placeholder="Enter your email"
+          />
+          {formik.touched.email && formik.errors.email ? (
+            <div className="text-red-500 text-sm">{formik.errors.email}</div>
+          ) : null}
+          <br />
+          <label className="block mb-2" htmlFor="password">Password:</label>
+          <input
+            type="password"
+            {...formik.getFieldProps('password')}
+            className="w-full p-2 pl-10 text-sm text-gray-700"
+            placeholder="Enter your password"
+          />
+          {formik.touched.password && formik.errors.password ? (
+            <div className="text-red-500 text-sm">{formik.errors.password}</div>
+          ) : null}
+          <br />
+          <button
+            type="submit"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            Login
+          </button>
         </form>
+        {isRegistered ? (
+          <p className="text-sm text-gray-600 mt-4">
+            Not registered? <a href="/register" className="text-blue-600 hover:text-blue-800">Register now!</a>
+          </p>
+        ) : (
+          <p className="text-sm text-red-500 mt-4">Invalid email or password. Please try again.</p>
+        )}
+        <ToastContainer />
       </div>
     </div>
   );
 };
-
 
 export default LoginPage;

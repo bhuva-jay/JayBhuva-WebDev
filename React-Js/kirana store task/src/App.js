@@ -7,14 +7,15 @@ import Buyer from './components/Buyer'
 import Dashboard from './components/Dashboard';
 import Registration from './components/Registration';
 import Login from './components/Login';
-
+import HomePage from './components/HomePage';
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Dashboard />} />
+          <Route path='/' element={<HomePage />} />
+          <Route path='/dashboard' element={<Dashboard />} />
           <Route path='/admin' element={<Admin />} />
           <Route path='/Selsmen' element={<Selsmen />} />
           <Route path='/Buyer' element={<Buyer />} />
@@ -22,8 +23,6 @@ function App() {
           <Route path='/login' element={<Login />} />
         </Routes>
       </BrowserRouter>
-
-
     </>
   );
 }
